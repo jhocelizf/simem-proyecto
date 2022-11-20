@@ -4,45 +4,47 @@
     box-sizing: border-box;
 }
 
-@font-face{
+@font-face {
     font-family: gotham-bold;
     src: url(../font/gotham-bold.otf);
 }
-@font-face{
+
+@font-face {
     font-family: gotham-black;
     src: url(../font/gotham-black.otf);
 }
-@font-face{
+
+@font-face {
     font-family: gotham-regular;
     src: url(../font/gotham-regular.otf);
 }
 
-.gridContenedor{
+.gridContenedor {
     display: grid;
-    grid-template-columns: repeat(3,1fr) ;
-    grid-template-rows: 116px auto 100px ;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 116px auto 100px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
 }
 
-.encabezado{
+.encabezado {
     grid-area: header;
 }
 
-.contenido{ 
+.contenido {
     grid-area: main;
-    background-color: rgb(235, 235, 235); 
+    background-color: rgb(235, 235, 235);
 }
 
-.pie{
+.pie {
     grid-area: footer;
 }
 
 
 /*----- HEADER----- */
-header{
+header {
     width: 100%;
     background-color: #c9c5cc;
     /* display: flex;
@@ -52,25 +54,27 @@ header{
     height: 100%;
 }
 
-header img{
+header img {
     width: 280px;
     height: 90px;
 }
 
-.container-fluid{
+.container-fluid {
     background-color: #c9c5cc;
 }
 
-nav .navbar.navbar-expand-lg-navbar-light-bg-light{
+nav .navbar.navbar-expand-lg-navbar-light-bg-light {
     padding: 0;
 }
-.collapse.navbar-collapse .nav-link.active{
+
+.collapse.navbar-collapse .nav-link.active {
     font-size: small;
     font-family: gotham-regular, sans-serif;
     font-weight: 300;
     transition: .5s ease-in;
 }
-.collapse.navbar-collapse .nav-link.active:hover{
+
+.collapse.navbar-collapse .nav-link.active:hover {
     color: #893aaa;
 }
 
@@ -101,11 +105,11 @@ header nav ul{
 
 /*----- MAIN INDEX----- */
 
-.hero{
+.hero {
     width: 100%;
     height: 470px;
-    background: rgb(137,58,170);
-    background: linear-gradient(66deg, rgba(137,58,170,1) 45%, rgba(91,7,119,1) 56%);
+    background: rgb(137, 58, 170);
+    background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
     background-attachment: fixed;
     display: flex;
     flex-direction: row;
@@ -114,93 +118,96 @@ header nav ul{
 }
 
 .hero div {
-    font-family: gotham-black, sans-serif; 
+    font-family: gotham-black, sans-serif;
     padding: 10px;
     margin: 20px;
 
 }
 
-.hero div h1{
+.hero div h1 {
     color: #ffffff;
     font-size: 45px;
     margin-left: 15px;
-    
+
 }
 
-.hero div h2{
+.hero div h2 {
     color: rgb(207, 207, 207);
     font-size: 25px;
     margin-left: 15px;
 }
 
-div .imgHero{
+div .imgHero {
     width: 430px;
     height: 380px;
-    transition: .5s ease-in ;
+    transition: .5s ease-in;
 }
-div .imgHero:hover{
+
+div .imgHero:hover {
     transform: scale(1.2);
 }
 
-.gridContainerGaleria{
+.gridContainerGaleria {
     display: grid;
-    grid-template-columns: repeat(3,150px);
+    grid-template-columns: repeat(3, 150px);
     grid-template-rows: 120px 120px;
-    gap:  15px;
+    gap: 15px;
     padding: 5px;
     margin: 10px;
 }
 
-.gridContainerGaleria div img{
+.gridContainerGaleria div img {
     height: 75%;
     width: 80%;
     padding: 5px;
-    
+
 }
-.gridContainerGaleria div{
+
+.gridContainerGaleria div {
     position: relative;
     text-align: center;
 }
 
-.gridContainerGaleria div h3{
+.gridContainerGaleria div h3 {
     position: absolute;
     bottom: 0;
     font-size: 13px;
     width: 100%;
     background-color: #e7d8f0;
 }
-.gridItem{
+
+.gridItem {
     font-family: gotham-regular, sans-serif;
     font-weight: 300;
     border: 2px solid black;
-} 
+}
 
-.especialidades{
+.especialidades {
     display: flex;
     flex-direction: row;
     padding-top: 15px;
 }
 
-.especialidades .asociateContenedor h2{
+.especialidades .asociateContenedor h2 {
     width: 100%;
     color: black;
     font-size: 35px;
     font-family: gotham-black, sans-serif;
     text-align: left;
-    margin-bottom: 35px; 
+    margin-bottom: 35px;
 }
 
-.especialidades .asociateContenedor span{
+.especialidades .asociateContenedor span {
     color: #893aaa;
 }
 
-.especialidades .asociateContenedor p{
+.especialidades .asociateContenedor p {
     font-size: 20px;
     font-family: gotham-bold, sans-serif;
     margin-bottom: 40px;
 }
 
-.especialidades .asociateContenedor a{
+.especialidades .asociateContenedor a {
     width: 30%;
     color: black;
     font-family: gotham-regular, sans-serif;
@@ -210,20 +217,20 @@ div .imgHero:hover{
     padding: 10px;
 }
 
-.beneficios{
+.beneficios {
     height: 400px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: space-around;
     margin: 30px;
     background-image: url(../img/groovepaper.png)
 }
 
-.beneficios .beneficiosItems{
+.beneficios .beneficiosItems {
     width: 600px;
 }
 
-.beneficios .beneficiosItems h2{
+.beneficios .beneficiosItems h2 {
     font-size: 35px;
     font-family: gotham-black, sans-serif;
     color: #893aaa;
@@ -231,35 +238,36 @@ div .imgHero:hover{
     padding: 20px;
 }
 
-.beneficios .beneficiosItems ul li{
+.beneficios .beneficiosItems ul li {
     font-size: medium;
     font-family: gotham-bold, sans-serif;
     font-weight: 200;
     padding: 10px;
 }
 
-.beneficios .beneficiosImg img{
+.beneficios .beneficiosImg img {
     width: 450px;
     height: 400px;
 }
 
-.conocenos{
+.conocenos {
     height: 300px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    justify-content:space-around;
+    justify-content: space-around;
     margin: 30px;
 }
 
-.conocenos .conocenosHistoria h2{
+.conocenos .conocenosHistoria h2 {
     font-size: 35px;
-    font-family: gotham-black,sans-serif;
+    font-family: gotham-black, sans-serif;
     color: #893aaa;
     text-align: center;
     padding: 10px;
 }
-.conocenos .conocenosHistoria h3{
+
+.conocenos .conocenosHistoria h3 {
     font-family: gotham-black, sans-serif;
     font-size: 20px;
     text-align: center;
@@ -267,98 +275,105 @@ div .imgHero:hover{
     padding: 15px;
 }
 
-.conocenos .conocenosHistoria p{
-    font-family: gotham-bold, sans-serif ;
-    font-size: medium ;
+.conocenos .conocenosHistoria p {
+    font-family: gotham-bold, sans-serif;
+    font-size: medium;
     text-align: left;
     margin-bottom: 15px;
 }
 
-.conocenos .conocenosHistoria{
+.conocenos .conocenosHistoria {
     width: 600px;
 }
 
-.conocenos .conocenosImg{
+.conocenos .conocenosImg {
     width: 250px;
     height: 200px;
     padding: 5px;
 }
 
 /*-- MAIN ASOCIATE-- */
-.heroAsociate{
+.heroAsociate {
     width: 100%;
     height: 400px;
-    background: rgb(137,58,170);
-    background: linear-gradient(66deg, rgba(137,58,170,1) 45%, rgba(91,7,119,1) 56%);
+    background: rgb(137, 58, 170);
+    background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding-left: 20px;
 }
-.heroAsociate .asociateTexto h1{
+
+.heroAsociate .asociateTexto h1 {
     font-family: gotham-black, sans-serif;
     color: #ffffff;
     font-size: 45px;
 }
-.heroAsociate .asociateTexto h2{
+
+.heroAsociate .asociateTexto h2 {
     font-family: gotham-bold, sans-serif;
     color: rgb(207, 207, 207);
-    font-size: 25px; 
+    font-size: 25px;
 }
-.heroAsociate .asociateTexto p{
+
+.heroAsociate .asociateTexto p {
     font-family: gotham-bold, sans-serif;
     color: rgb(207, 207, 207);
     font-size: 17px;
 }
-.heroAsociate img{
+
+.heroAsociate img {
     width: 330px;
     height: 350px;
 }
-.formulario{
+
+.formulario {
     width: 900px;
     padding: 10px;
     background-color: #c9c5cc;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    font-family: gotham-bold, sans-serif ;
+    font-family: gotham-bold, sans-serif;
     color: black;
-    box-shadow: 4px 7px 9px 0px rgba(115,115,115,0.75);
-    -webkit-box-shadow: 4px 7px 9px 0px rgba(115,115,115,0.75);
-    -moz-box-shadow: 4px 7px 9px 0px rgba(115,115,115,0.75);
+    box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
+    -webkit-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
+    -moz-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
 }
 
-.formulario h3{
+.formulario h3 {
     font-family: gotham-black, sans-serif;
     font-size: 20px;
     color: #893aaa;
     text-align: center;
     margin-bottom: 20px;
 }
-.formulario h4{
+
+.formulario h4 {
     font-family: gotham-black, sans-serif;
     font-size: 17px;
 }
-.formulario label{
+
+.formulario label {
     font-size: 15px;
 }
 
-.item{
+.item {
     width: 100%;
     background-color: #c9c5cc;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 15px;
     border: 1px solid #893aaa;
-    font-family: 'Merriweather', serif ;
+    font-family: 'Merriweather', serif;
     font-size: 18px;
 }
 
-.boton{
+.boton {
     font-family: gotham-regular, sans-serif;
     font-weight: 300;
-    width: 100% ;
+    width: 100%;
     position: relative;
     margin-top: 10px;
     padding: 10px 15px;
@@ -368,7 +383,7 @@ div .imgHero:hover{
     color: black;
     font-size: 15px;
     cursor: pointer;
-    transition: 1s ;
+    transition: 1s;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -376,85 +391,91 @@ div .imgHero:hover{
 
 }
 
-.boton:hover{
+.boton:hover {
     color: #790fa7;
 }
 
-.boton span{
+.boton span {
     position: absolute;
     background-color: #893aaa;
     transition: 1s;
 }
 
-.boton span:nth-child(1){
+.boton span:nth-child(1) {
     width: 100%;
     height: 1px;
     top: 0;
-    left: -100%; 
+    left: -100%;
 }
 
-.boton span:nth-child(2){
+.boton span:nth-child(2) {
     width: 100%;
     height: 1px;
     bottom: 0;
-    right: -100%; 
+    right: -100%;
 }
-.boton span:nth-child(3){
+
+.boton span:nth-child(3) {
     width: 1px;
     height: 100%;
     bottom: -100%;
-    left: 0; 
+    left: 0;
 }
 
-.boton span:nth-child(4){
+.boton span:nth-child(4) {
     width: 1px;
     height: 100%;
     top: -100%;
-    right: 0; 
+    right: 0;
 }
 
-.boton:hover span:nth-child(1){
-    left: 0;   
+.boton:hover span:nth-child(1) {
+    left: 0;
 }
 
-.boton:hover span:nth-child(2){
-    right: 0;   
+.boton:hover span:nth-child(2) {
+    right: 0;
 }
-.boton:hover span:nth-child(3){
-    bottom:0;  
+
+.boton:hover span:nth-child(3) {
+    bottom: 0;
 }
-.boton:hover span:nth-child(4){
-    top: 0;   
+
+.boton:hover span:nth-child(4) {
+    top: 0;
 }
+
 /* --MAIN SERVICIOS-- */
-.heroServicios{
+.heroServicios {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: rgb(137,58,170);
-    background: linear-gradient(66deg, rgba(137,58,170,1) 45%, rgba(91,7,119,1) 56%);
+    background: rgb(137, 58, 170);
+    background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
 }
-.heroServicios .encabezadoServicios h1{
+
+.heroServicios .encabezadoServicios h1 {
     font-family: gotham-black, sans-serif;
     color: #ffffff;
     font-size: 45px;
     padding-left: 100px;
     padding-bottom: 10px;
 }
-.heroServicios .encabezadoServicios h2{
+
+.heroServicios .encabezadoServicios h2 {
     font-family: gotham-black, sans-serif;
     color: rgb(207, 207, 207);
     font-size: 25px;
     padding-left: 120px;
 }
 
-.heroServicios .imagenServicios img{
+.heroServicios .imagenServicios img {
     width: 400px;
     height: 400px;
 }
 
-.especialidadesMedicos h2{
+.especialidadesMedicos h2 {
     font-family: gotham-black, sans-serif;
     font-size: 40px;
     color: #893aaa;
@@ -463,96 +484,99 @@ div .imgHero:hover{
     margin-top: 10px;
 }
 
-.gridContainerAsociateGaleria{
+.gridContainerAsociateGaleria {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 150px 150px 150px 150px 150px;
     align-content: center;
     justify-content: center;
-    gap:  5px;
+    gap: 5px;
     padding: 5px;
     margin: 10px;
 }
 
-.gridContainerAsociateGaleria div img{
+.gridContainerAsociateGaleria div img {
     height: 75%;
     width: 50%;
     padding: 5px;
     transition: all 500ms ease-out;
-    
+
 }
-.gridContainerAsociateGaleria div{
+
+.gridContainerAsociateGaleria div {
     position: relative;
     text-align: center;
     overflow: hidden;
     cursor: pointer;
 }
 
-.gridContainerAsociateGaleria div .capa{
+.gridContainerAsociateGaleria div .capa {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background:rgba(91, 7, 119, 0.75);
+    background: rgba(91, 7, 119, 0.75);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
     text-align: center;
 }
 
-.gridContainerAsociateGaleria div:hover > .capa{
+.gridContainerAsociateGaleria div:hover>.capa {
     opacity: 1;
     visibility: visible;
 }
 
-.gridContainerAsociateGaleria div:hover > img{
+.gridContainerAsociateGaleria div:hover>img {
     transform: scale(1.1);
 }
 
-.gridContainerAsociateGaleria div:hover > .capa h4{
+.gridContainerAsociateGaleria div:hover>.capa h4 {
     margin-top: 50px;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-.gridContainerAsociateGaleria div .capa h4{
+.gridContainerAsociateGaleria div .capa h4 {
     color: white;
-    font-family: gotham-black,sans-serif;
+    font-family: gotham-black, sans-serif;
     transition: all 500ms ease-out;
     margin-top: 20px;
 }
 
-.gridContainerAsociateGaleria div .capa p{
+.gridContainerAsociateGaleria div .capa p {
     color: white;
     font-size: 15px;
-    font-family: gotham-bold,sans-serif;
+    font-family: gotham-bold, sans-serif;
     text-align: center;
     line-height: 1.5;
     width: 100%;
-} 
+}
 
-.gridContainerAsociateGaleria div h3{
+.gridContainerAsociateGaleria div h3 {
     position: absolute;
     bottom: 0;
     font-size: 13px;
     width: 100%;
     height: 17px;
-    background:rgba(212, 180, 226, 0.61);
+    background: rgba(212, 180, 226, 0.61);
 
 }
-.gridItemAsociate{
+
+.gridItemAsociate {
     font-family: gotham-regular, sans-serif;
     font-weight: 300;
     border: 2px solid black;
 }
-.ventajasTurnos{
+
+.ventajasTurnos {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 190px;
 }
 
-.ventajasTurnos h2{
+.ventajasTurnos h2 {
     font-family: gotham-black, sans-serif;
     font-size: 30px;
     color: #893aaa;
@@ -560,51 +584,54 @@ div .imgHero:hover{
     padding-bottom: 5px;
 }
 
-.ventajasTurnos p{
+.ventajasTurnos p {
     font-family: gotham-bold, sans-serif;
     font-size: 13px;
     text-align: center;
 }
 
-.ventajasTurnos .ventajas{
+.ventajasTurnos .ventajas {
     width: 100%;
     margin: 15px;
     padding: 8px;
     border: 1px solid black;
 }
 
-.ventajasTurnos .turnos{
+.ventajasTurnos .turnos {
     width: 100%;
     margin: 15px;
     padding: 8px;
     border: 1px solid black;
 }
 
-.ventajasTurnos .turnos h3{
+.ventajasTurnos .turnos h3 {
     font-family: gotham-black, sans-serif;
     text-align: center;
     padding-bottom: 5px;
 }
 
-.ventajasTurnos .turnos a{
+.ventajasTurnos .turnos a {
     font-family: gotham-black, sans-serif;
     color: #893aaa;
     text-decoration: none;
 
 }
+
 /* -----QUIENES SOMOS----- */
-.heroQuienesSomos .encabezadoQuienesSomos{
-    background: rgb(137,58,170);
-    background: linear-gradient(66deg, rgba(137,58,170,1) 45%, rgba(91,7,119,1) 56%);
+.heroQuienesSomos .encabezadoQuienesSomos {
+    background: rgb(137, 58, 170);
+    background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
     height: 50px;
 }
-.heroQuienesSomos .encabezadoQuienesSomos h1{
+
+.heroQuienesSomos .encabezadoQuienesSomos h1 {
     font-family: gotham-black, sans-serif;
     font-size: 40px;
     color: #ffffff;
     text-align: center;
 }
-.empresaFamiliar{
+
+.empresaFamiliar {
     border: 2px solid #893aaa;
     background-color: #c9c5cc;
     margin-top: 20px;
@@ -614,7 +641,8 @@ div .imgHero:hover{
     padding: 5px;
     margin: 10px;
 }
-.mision{
+
+.mision {
     width: 100%;
     height: 300px;
     display: flex;
@@ -622,113 +650,131 @@ div .imgHero:hover{
     justify-content: center;
     align-items: center;
 }
-.mision .misionDiv{
+
+.mision .misionDiv {
     width: 700px;
-    margin-right: 50px;   
+    margin-right: 50px;
 }
-.mision .misionDiv h2{
+
+.mision .misionDiv h2 {
     font-family: gotham-black, sans-serif;
     font-size: 35px;
     color: #893aaa;
 }
-.mision .misionDiv p{
+
+.mision .misionDiv p {
     font-family: gotham-bold, sans-serif;
 }
-.mision .misionImg img{
+
+.mision .misionImg img {
     width: 250px;
     height: 300px;
 }
-.vision{
+
+.vision {
     width: 100%;
     height: 400px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
-.vision .visionDiv{
+
+.vision .visionDiv {
     width: 700px;
     margin-right: 50px;
 }
-.vision .visionDiv h2{
+
+.vision .visionDiv h2 {
     font-family: gotham-black, sans-serif;
     font-size: 35px;
     color: #893aaa;
 }
 
-.vision .visionDiv p{
+.vision .visionDiv p {
     font-family: gotham-bold, sans-serif;
 }
-.vision .visionImg img{
+
+.vision .visionImg img {
     width: 350px;
     height: 400px;
     padding-right: 30px;
 }
-.historia{
+
+.historia {
     width: 100%;
     height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     margin-bottom: 20px;
 }
-.historia .nuestraHistoria{
+
+.historia .nuestraHistoria {
     width: 700px;
     margin-right: 50px;
 }
-.historia .nuestraHistoria h2{
+
+.historia .nuestraHistoria h2 {
     font-family: gotham-black, sans-serif;
     font-size: 35px;
     color: #893aaa;
 }
 
-.historia .nuestraHistoria p{
+.historia .nuestraHistoria p {
     font-family: gotham-bold, sans-serif;
 }
-.historia .nuestraHistoriaImg img{
+
+.historia .nuestraHistoriaImg img {
     width: 450px;
     height: 330px;
 }
 
 /* --MAIN CONTACTOS-- */
-.contacto{
+.contacto {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: 10px;
 }
-.heroContacto .heroTitulo{
-    background: rgb(137,58,170);
-    background: linear-gradient(66deg, rgba(137,58,170,1) 45%, rgba(91,7,119,1) 56%);
+
+.heroContacto .heroTitulo {
+    background: rgb(137, 58, 170);
+    background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
     height: 50px;
 }
 
-.heroContacto .heroTitulo h1{
+.heroContacto .heroTitulo h1 {
     font-family: gotham-black, sans-serif;
     font-size: 40px;
     color: white;
     text-align: center;
 }
-.contacto h3{
+
+.contacto h3 {
     font-family: gotham-black, sans-serif;
     font-size: 17px;
 }
-.mapaContacto{
+
+.mapaContacto {
     width: 500px;
     padding-right: 10px;
 }
-.mapaContacto h1{
+
+.mapaContacto h1 {
     font-family: gotham-black, sans-serif;
     font-size: 30px;
     color: #893aaa;
 }
-.mapaContacto p{
+
+.mapaContacto p {
     font-family: gotham-bold, sans-serif;
     font-size: 15px;
 }
-.numeros ul li{
+
+.numeros ul li {
     width: 90px;
     list-style: none;
     text-align: center;
@@ -736,18 +782,20 @@ div .imgHero:hover{
     color: black;
     border-radius: 4px;
 }
-.formularioContacto{
+
+.formularioContacto {
     width: 500px;
     padding: 30px;
     background-color: #c9c5cc;
     font-family: gotham-bold, sans-serif;
     font-size: 15px;
     color: black;
-    box-shadow: 4px 7px 9px 0px rgba(115,115,115,0.75);
-    -webkit-box-shadow: 4px 7px 9px 0px rgba(115,115,115,0.75);
-    -moz-box-shadow: 4px 7px 9px 0px rgba(115,115,115,0.75);
+    box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
+    -webkit-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
+    -moz-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
 }
-.control{
+
+.control {
     width: 100%;
     background-color: #c9c5cc;
     padding: 10px;
@@ -756,23 +804,24 @@ div .imgHero:hover{
     border: 1px solid #893aaa;
 }
 
-.formularioContacto .boton{
+.formularioContacto .boton {
     width: 100%;
     background-color: white;
     color: black;
-    font-family: gotham-regular, sans-serif ;
+    font-family: gotham-regular, sans-serif;
     font-weight: 300;
     font-size: 15px;
     border: none;
     padding: 10px;
     margin: 12px 0;
 }
+
 /*----- FOOTER-----*/
 
-.footerCaja{
+.footerCaja {
     height: 100px;
     font-family: gotham-bold, sans-serif;
-    font-size:  16px;
+    font-size: 16px;
     background-color: #c9c5cc;
     display: flex;
     flex-direction: row;
@@ -780,54 +829,56 @@ div .imgHero:hover{
     justify-content: space-around;
     align-items: center;
 }
-.footerH{
+
+.footerH {
     order: 2;
     text-align: center;
 }
 
-.footerCaja h2,h3{
+.footerCaja h2,
+h3 {
     font-size: 16px;
 }
 
-.footerA{
+.footerA {
     order: 1;
-    
+
 }
 
-.footerA a{
+.footerA a {
     text-decoration: none;
     color: black;
 }
 
-.footerRedes{
+.footerRedes {
     order: 3;
     text-align: center;
 }
 
-footer img{
+footer img {
     width: 70px;
     height: 70px;
 }
 
-footer a img{
+footer a img {
     width: 50px;
     height: 50px;
 }
 
-/* MEDIA QUERIE----- RESPONSIVE*/
-
-@media screen and (max-width:970px){
+/*-- INDEX---- MEDIA QUERIE-----RESPONSIVE-- */
+@media screen and (max-width:900px){
     .gridContenedor{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows:  120px auto 100px;
         grid-template-areas:
-        "header header "
-        "main main"
-        "footer footer"
+        "header header header "
+        "main main main"
+        "footer footer footer"
         ; 
     }
     .hero{
+        width: 100%;
         flex-direction: row; 
     }
     .hero div {
@@ -847,15 +898,14 @@ footer a img{
         font-size: 15px;
     }
     div .imgHero{
-        width: 430px;
-        height: 380px;
+        width: 410px;
+        height: 370px;
         transition: none;
     }
 
     div .imgHero:hover{
         transform: none;
     }
-    
     .especialidades{
         height: 590px;
         flex-direction: column;
@@ -878,7 +928,6 @@ footer a img{
         justify-content: space-around; 
         align-items: center;
         margin: 10px;
-        background-image: url(../img/groovepaper.png)
     }
     .beneficios .beneficiosItems h2{
         font-size: 28px;
@@ -917,317 +966,202 @@ footer a img{
     .footerCaja{
         font-size: 5px;
     }
+    .conocenos .conocenosImg{
+        width: 290px;
+        height: 300px;
+    }
+    .conocenos .conocenosImg img{
+        width: 290px;
+        height: 300px;
+        padding: 5px;
+    }
 }
-
-@media screen and (max-width:750px){
+@media screen and (max-width:768px){
     .gridContenedor{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 120px auto 100px ;
-        grid-template-areas: 
-        "header"
+        grid-template-rows:  120px auto 100px;
+        grid-template-areas:
+        "header "
         "main"
         "footer"
-        ;
+        ; 
     }
     .hero{
-        flex-direction: row;
-        height: 350px;
-        
-    }
-    .hero div {
-        font-family: 'Merriweather', serif; 
-        padding: 5px;
-        margin: 10px;
-    
+        width: 100%;
+        height: 300px;
     }
     .hero div h1{
-        color: #ffffff;
-        font-size: 40px;
-        text-align: center;
-        padding-top: 15px;
-    }
-    .hero div h2{
-        color: rgb(207, 207, 207);
-        font-size: 15px;
-        text-align: center;
-    }
-    div .imgHero{
-        width: 230px;
-        height: 180px;  
-    }
-    .especialidades{
-        height: 600px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px; 
-    }
-    .especialidades .asociateContenedor{
-        height: 280px;
-    }
-    .especialidades .asociateContenedor h2{
-        font-size: 30px;
-    }
-    .beneficios{
-        height: 650px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around; 
-        align-items: center;
-        margin: 10px;
-        background-image: url(../img/groovepaper.png)
-    }
-    .beneficios .beneficiosItems h2{
-        font-size: 28px;
         font-family: gotham-black, sans-serif;
-        color: #893aaa;
+        color: #ffffff;
+        font-size: 35px;
+        width: 100%;
         text-align: center;
-        padding: 10px;
-    }
-    .conocenos{
-        height: 550px;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        margin: 5px;
-    }
-    .conocenos .conocenosHistoria h2{
-        font-size: 28px;
-    }
-    .conocenos .conocenosHistoria p{
-        font-family: gotham-bold, sans-serif ;
-        font-size: 15px;
-        text-align: justify;
-        margin-bottom: 5px;
-    }
-    .conocenos .conocenosImg{
-        width: 315px;
-        height: 300px;
-        padding: 0;
-    }
-}
-@media  screen and (max-width:700px){
-    .gridContenedor{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 116px auto 100px ;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    }
-    header{
-        flex-direction: column;
-        height: auto;
-    }
-    .hero{
-        height: 300px;
-    }
-    .especialidades .asociateContenedor h2{
-        font-size: 28px;
-    }
-    .especialidades .asociateContenedor p{
-        font-size: 15px;
-    }
-    .boton{
-        font-family: gotham-regular, sans-serif;
-        font-weight: 300;
-        width: 100% ;
         margin: 0;
-        padding: 5px 10px;
-        background-color: #c9c5cc;
-        font-size: 12px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-} 
-@media screen and (max-width:650px){
-    div .imgHero{
-        display: none;  
-    }
-    .beneficios{
-    width: 100%;
-    padding: 10px;
-    }  
-
-}
-@media  screen and (max-width:380px){
-    .gridContenedor{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 116px auto 150px ;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    }
-    .hero{
-        flex-direction: column;
-        
-    }
-    .hero div {
-        font-family: gotham-black, sans-serif; 
-        padding: 5px;
-        margin: 10px;
-    
-    }
-    .hero div h1{
-        color: #ffffff;
-        font-size: 40px;
-        padding-bottom: 10px;
     }
     .hero div h2{
+        font-family: gotham-black, sans-serif;
         color: rgb(207, 207, 207);
-        font-size: 19px;
+        font-size: 20px;
+        text-align: center;
     }
     div .imgHero{
-        width: 300px;
-        height: 300px;
-    }
-    
-    .especialidades{
-        height: 300px;
-    }
-    .especialidades .asociateContenedor{
-        height: 200px;
-        width: 400px;
-    }
-    .especialidades .asociateContenedor h2{
-        width: 300px;
-        color: black;
-        font-size: 17px;
-        font-family: gotham-black, sans-serif;
-        margin-bottom: 5px;
-    }
-    .especialidades .asociateContenedor p{
-        font-size: 10px;
+    display: none;
     }
     .gridContainerGaleria{
         display: none;
     }
-    .boton{
-        font-family: gotham-regular, sans-serif;
-        font-weight: 300;
-        height: 40px;
-        width: 90% ;
-        margin: 0;
-        padding: 5px 10px;
-        background-color: #c9c5cc;
-        font-size: 10px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
     
-    .beneficios{
+    .especialidades{
+        height: 310px;
+    }
+    .especialidades .asociateContenedor{
+        width: 600px;
+        height: 500px;
+    }
+    .especialidades .asociateContenedor h2{
         width: 100%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content:flex-start; 
-        align-items: center;
-        padding: 5px;
-        margin: 0;
-        background-image: url(../img/groovepaper.png)
+        font-size: 20px;
+        padding-top: 15px;
+    }
+    .especialidades .asociateContenedor p{
+        font-size: 17px;
+    }
+    .boton{ 
+        font-weight: 350;
+        height: 60px ; 
+        font-size: 10px;
+    }
+    .beneficios{
+        height: 600px;
+        margin: 10px;
     }
     .beneficios .beneficiosItems h2{
-        font-size: 17px;
-        font-family: gotham-black, sans-serif;
-        color: #893aaa;
-        text-align: center;
-        padding: 10px;
+        font-size: 25px;
     }
+
     .beneficios .beneficiosItems ul li{
-        width: 300px;
-        font-size: 10px;
-        font-family: gotham-bold, sans-serif;
-        font-weight: 200;
-        margin: 5px;
-        margin-left: 20px;
-        padding: 1px;
+        font-size: 13px;
+        padding: 5px;
     }
     .beneficios .beneficiosImg img{
-        width: 170px;
-        height: 190px;
+        width: 250px;
+        height: 280px;
     }
     .conocenos{
-        width: 100%;
-        height: 400px;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        margin: 5px;
+        height: 550px;
+        margin: 0px;
     }
+    
     .conocenos .conocenosHistoria h2{
-        font-size: 17px;
-        font-family: gotham-black, sans-serif;
-        text-align: center;
+        font-size: 25px;
         padding: 10px;
     }
-    .conocenos .conocenosHistoria p{
-        width: 400px;
-        font-family: gotham-bold,sans-serif ;
-        font-size: 10px;
-        text-align: left;
-        margin-bottom: 5px;
-    }
     .conocenos .conocenosHistoria h3{
-        font-size: 15px;
+        font-family: gotham-black, sans-serif;
+        font-size: 16px;
+        text-align: center;
+        color: #893aaa;
+        padding: 15px;
     }
+    
+    .conocenos .conocenosHistoria p{
+        font-family: gotham-bold, sans-serif ;
+        font-size: 14px ;
+        text-align: left;
+        margin-bottom: 13px;
+    }
+    
     .conocenos .conocenosHistoria{
-        width: 500px;
-    }
-    .conocenos .conocenosImg{
-        width: 150px;
-        height: 170px;
-    }
-    .conocenosImg img{
-        width: 170px;
-        height: 180px;
-    }
-    .footerCaja{
-        width: 100%;
-        height: 150px;
-        font-size: small;
-        flex-direction: column;
-        align-items: center;
-    }
-    footer img{
-        width: 50px;
-        height: 50px;
+        width: 600px;
     }
     
-    footer a img{
-        width: 30px;
-        height: 30px;
+    .conocenos .conocenosImg img{
+        width: 300px;
+        height: 250px;
+        padding: 5px;
     }
-    
+}
+@media screen and (max-width:350px){
+    .gridContenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  100px auto 100px;
+    grid-template-areas:
+    "header "
+    "main"
+    "footer"
+    ; 
+}
+.container-fluid{
+    background-color: #c9c5cc;
+    height: 85px;
+}
+.hero{
+    height: 250px;
+}
+.especialidades{
+    height: 300px;
+}
+.especialidades .asociateContenedor{
+    width: 500px;
+    height: 500px;
+}
+.especialidades .asociateContenedor h2{
+    font-size: 20px;
+}
+.beneficios{
+    height: 540px;
+}
+.beneficios .beneficiosItems h2{
+    font-size: 20px;
+}
+
+.beneficios .beneficiosItems ul li{
+    font-size: 12px;
+    padding: 5px;
+}
+.beneficios .beneficiosImg img{
+    width: 230px;
+    height: 250px;
+}
+.conocenos{
+    height: 540px;
+}
+.conocenos .conocenosHistoria h2{
+    font-size: 20px;
+    padding: 10px;
+}
+.conocenos .conocenosHistoria h3{
+    font-family: gotham-black, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #893aaa;
+    padding: 15px;
+}
+
+.conocenos .conocenosHistoria p{
+    width: 570px;
+    font-family: gotham-bold, sans-serif ;
+    font-size: 12px ;
+    text-align: left;
+    margin-bottom: 13px;
+}
+
+.conocenos .conocenosHistoria{
+    width: 590px;
+}
+.conocenos .conocenosImg{
+    width: 250px;
+    height: 250px;
+}
+.conocenos .conocenosImg img{
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+}
 }
 /*-- ASOCIATE---- MEDIA QUERIE-----RESPONSIVE-- */
-@media screen and (max-width:900px){
-    .formulario{
-        width: 700px;
-    }
-}
-@media screen and (max-width:760px){
-    .heroAsociate .asociateTexto h1{
-        font-size: 40px;
-    }
-    .heroAsociate .asociateTexto h2{
-        font-size: 20px; 
-    }
-    .heroAsociate .asociateTexto p{
-        font-size: 15px;
-    }
-    .heroAsociate img{
-        width: 300px;
-        height: 320px;
-    }
-}
 @media screen and (max-width:700px){
     .formulario{
         width: 550px;
@@ -1245,32 +1179,31 @@ footer a img{
         width: 280px;
         height: 300px;
     }
+    .boton{
+        height: 35px;
+    }
 }
-@media screen and (max-width:590px){
+
+@media screen and (max-width:563px){
     .heroAsociate{
         height: 250px;
         padding-left: 5px;
     }
-    .formulario{
-        width: 450px;
-    }
     .heroAsociate .asociateTexto h1{
-        font-size: 35px;
+        font-size: 33px;
         text-align: center;
     }
     .heroAsociate .asociateTexto h2{
-        font-size: 15px; 
+        font-size: 13px; 
         text-align: center;
     }
     .heroAsociate .asociateTexto p{
-        font-size: 10px;
+        font-size: 8px;
         text-align: center;
     }
     .heroAsociate img{
-    display: none;
+        display: none;
     }
-}
-@media screen and (max-width:500px){
     .formulario{
         width: 360px;
     }
@@ -1299,6 +1232,10 @@ footer a img{
         width: 260px;
         height: 70px;
     }
+    header img{
+        width: 240px;
+        height: 50px;
+    }
     .heroAsociate .asociateTexto h1{
         font-size: 33px;
         text-align: center;
@@ -1312,27 +1249,8 @@ footer a img{
         text-align: center;
     }
     .formulario{
-        width: 300px;
-    }
-    .formulario h3{
-        font-size: 17px;
-    }
-
-    .formulario h4{
-        font-size: 16px;
-    }
-    .formulario label{
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width:355px){
-    header img{
-        width: 240px;
-        height: 50px;
-    }
-    .formulario{
         width: 280px;
+        font-size: 14px;
     }
     .formulario h3{
         font-size: 14px;
@@ -1344,4 +1262,3 @@ footer a img{
         font-size: 12px;
     }
 }
-
