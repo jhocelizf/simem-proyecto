@@ -190,7 +190,7 @@ div .imgHero:hover {
 }
 
 .beneficios {
-    width: 100%;
+    width: 95%;
     height: 400px;
     display: flex;
     flex-direction: row;
@@ -200,7 +200,7 @@ div .imgHero:hover {
 }
 
 .beneficios .beneficiosItems {
-    width: 600px;
+    width: 100%;
 }
 
 .beneficios .beneficiosItems h2 {
@@ -224,15 +224,16 @@ div .imgHero:hover {
 }
 
 .conocenos {
-    width: 100%;
+    width: 95%;
     height: 300px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-around;
     margin: 30px;
 }
-
+.conocenos .conocenosHistoria {
+    width: 100%;
+}
 .conocenos .conocenosHistoria h2 {
     font-size: 35px;
     font-family: gotham-black, sans-serif;
@@ -251,18 +252,16 @@ div .imgHero:hover {
 
 .conocenos .conocenosHistoria p {
     font-family: gotham-bold, sans-serif;
-    font-size: medium;
-    text-align: left;
+    font-size: 15px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
-.conocenos .conocenosHistoria {
-    width: 600px;
-}
 
-.conocenos .conocenosImg {
-    width: 250px;
-    height: 200px;
+
+.conocenos .conocenosImg img{
+    width: 300px;
+    height: 300px;
     padding: 5px;
 }
 
@@ -935,7 +934,6 @@ div .imgHero:hover {
     height: 300px;
 }
 .conocenos {
-    width: 100%;
     height: 350px;
 }
 
@@ -945,7 +943,7 @@ div .imgHero:hover {
 
 .conocenos .conocenosHistoria p {
     font-family: gotham-bold, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 5px;
 }
 
@@ -982,7 +980,7 @@ div .imgHero:hover {
 }
 .hero {
     width: 100%;
-    height: 200px;
+    height: 300px;
     flex-direction: column;
 } 
 
@@ -1000,7 +998,7 @@ div .imgHero:hover {
     color: rgb(207, 207, 207);
     font-size: 20px;
 }
-div .imgHero{
+.imgHero{
     display: none;
 }
 .gridContainerGaleria {
@@ -1029,12 +1027,13 @@ div .imgHero{
 }
 .boton{
     height: 40px;
-    padding: 8px;
+    padding: 10px;
     margin: 5px;
 }
 .especialidades .asociateContenedor a{
-    height: 28px;
+    height: 25px;
     font-size: 12px;
+    padding: 5px 5px 5px;
 }
 .beneficios {
     height: 500px;
@@ -1056,8 +1055,10 @@ div .imgHero{
     height: 290px;
 }
 .conocenos {
-    width: 100%;
     height: 500px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
 
 .conocenos .conocenosHistoria h2 {
@@ -1120,6 +1121,7 @@ header img {
     }
 .hero {
     width: 100%;
+    height: 270px;
 } 
 
 .hero div h1 {
@@ -1128,7 +1130,7 @@ header img {
     font-size: 25px;
     text-align: center;
     margin-top: 10px;
-    padding-top: 15px;
+    padding-top: 5px;
 }
 
 .hero div h2 {
@@ -1155,8 +1157,8 @@ header img {
     margin-bottom: 10px;
 }
 .boton{
-    height: 35px;
-    padding: 8px;
+    height: 30px;
+    padding: 2px;
     margin: 5px;
 }
 .especialidades .asociateContenedor a{
@@ -1165,6 +1167,8 @@ header img {
 }
 .beneficios {
     height: 500px;
+    margin: 5px;
+    justify-content: center;
 }
 
 .beneficios .beneficiosItems h2 {
@@ -1276,10 +1280,12 @@ footer a img {
 @media screen and (max-width:768px) {
     .heroAsociate {
         height: 200px;
+        padding: 2px;
         flex-direction: column;
         text-align: center;
     }
     .heroAsociate .asociateTexto h1 {
+        padding-top: 10px;
         font-size: 30px;
     }
     
