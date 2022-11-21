@@ -154,6 +154,7 @@ div .imgHero:hover {
 }
 
 .especialidades {
+    width: 100%;
     display: flex;
     flex-direction: row;
     padding-top: 15px;
@@ -189,6 +190,7 @@ div .imgHero:hover {
 }
 
 .beneficios {
+    width: 100%;
     height: 400px;
     display: flex;
     flex-direction: row;
@@ -222,6 +224,7 @@ div .imgHero:hover {
 }
 
 .conocenos {
+    width: 100%;
     height: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -970,7 +973,7 @@ div .imgHero:hover {
 .gridContenedor {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 120px auto 100px;
+    grid-template-rows: 110px auto 100px;
     grid-template-areas:
         "header"
         "main"
@@ -1103,8 +1106,133 @@ footer a img {
     width: 20px;
     height: 20px;
 }
-
 }
+
+@media screen and (max-width:480px){
+.gridContenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px auto 100px;
+    }
+header img {
+        width: 220px;
+        height: 50px;
+    }
+.hero {
+    width: 100%;
+} 
+
+.hero div h1 {
+    font-family: gotham-black, sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.hero div h2 {
+    font-size: 20px;
+}
+
+.especialidades {
+    height: 200px;
+}
+
+.especialidades .asociateContenedor {
+    height: 200px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.especialidades .asociateContenedor h2 {
+    width: 80%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.especialidades .asociateContenedor p{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.boton{
+    height: 35px;
+    padding: 8px;
+    margin: 5px;
+}
+.especialidades .asociateContenedor a{
+    height: 28px;
+    font-size: 10px;
+}
+.beneficios {
+    height: 500px;
+}
+
+.beneficios .beneficiosItems h2 {
+    font-size: 20px;
+}
+
+.beneficios .beneficiosItems ul li {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.beneficios .beneficiosImg img {
+    width: 260px;
+    height: 260px;
+}
+.conocenos {
+    width: 100%;
+    height: 500px;
+}
+
+.conocenos .conocenosHistoria h2 {
+    font-size: 20px;
+}
+
+.conocenos .conocenosHistoria h3{
+    font-size: 15px;
+}
+
+.conocenos .conocenosHistoria p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.conocenos .conocenosImg {
+    width: 260px;
+    height: 260px;
+}
+
+.conocenos .conocenosImg img {
+    width: 260px;
+    height: 260px;
+    padding: 5px;
+}
+
+.footerCaja h2,h3 {
+    font-size: 13px;
+}
+
+.footerCaja {
+    width: 100%;
+    height: 110px;
+    font-size: small;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+footer a img {
+    width: 20px;
+    height: 20px;
+}
+}
+
+
 /* ASOCIATE ---- MEDIA QUERIE--- RESPONSIVE */
 @media screen and (max-width:1024px) {
     .heroAsociate {
@@ -1187,5 +1315,45 @@ footer a img {
     }
     .boton{
         font-size: 13px;
+    }
+}
+@media screen and (max-width:480px){
+    .heroAsociate {
+        height: 190px;
+        margin-top: 10px;
+    }
+    .heroAsociate .asociateTexto h1 {
+        font-size: 25px;
+    }
+    
+    .heroAsociate .asociateTexto h2 {
+        font-size: 20px;
+    }
+    
+    .heroAsociate .asociateTexto p {
+        font-size: 12px;
+    }
+
+    .formulario {
+        width: 350px;
+        font-size: 12px;
+    }
+    .formulario h3 {
+        font-size: 15px;
+    }
+
+    .formulario h4 {
+        font-size: 13px;
+    }
+
+    .formulario label {
+        font-size: 13px;
+    }
+    .item{
+        height: 30px;
+        font-size: 12px;
+    }
+    .boton{
+        font-size: 12px;
     }
 }
