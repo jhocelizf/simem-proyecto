@@ -861,7 +861,6 @@ footer a img {
         font-family: gotham-black, sans-serif;
         padding: 5px;
         margin: 10px;
-
     }
 
     .hero div h1 {
@@ -1088,7 +1087,7 @@ footer a img {
     }
 }
 
-@media screen and (max-width:370px) {
+@media screen and (max-width:385px) {
     .gridContenedor {
         display: grid;
         grid-template-columns: 370px;
