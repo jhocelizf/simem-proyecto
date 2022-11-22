@@ -22,7 +22,7 @@
 .gridContenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 116px auto 100px;
+    grid-template-rows: 100px auto 100px;
     grid-template-areas:
         "header header header"
         "main main main"
@@ -59,7 +59,7 @@ header img {
     background-color: #c9c5cc;
 }
 
-nav .navbar.navbar-expand-lg-navbar-light-bg-light {
+.navbar {
     padding: 0;
 }
 
@@ -67,7 +67,7 @@ nav .navbar.navbar-expand-lg-navbar-light-bg-light {
     font-size: small;
     font-family: gotham-regular, sans-serif;
     font-weight: 300;
-    transition: .5s ease-in;
+    transition: 1s ease-out;
 }
 
 .collapse.navbar-collapse .nav-link.active:hover {
@@ -108,13 +108,13 @@ nav .navbar.navbar-expand-lg-navbar-light-bg-light {
     margin-left: 15px;
 }
 
-div .imgHero {
+.hero .imgHero img{
     width: 430px;
     height: 380px;
     transition: .5s ease-in;
 }
 
-div .imgHero:hover {
+.hero .imgHero img:hover {
     transform: scale(1.2);
 }
 
@@ -257,8 +257,6 @@ div .imgHero:hover {
     text-align: center;
 }
 
-
-
 .conocenos .conocenosImg img{
     width: 300px;
     height: 300px;
@@ -278,19 +276,19 @@ div .imgHero:hover {
     padding-left: 20px;
 }
 
-.heroAsociate .asociateTexto h1 {
+.heroAsociate h1 {
     font-family: gotham-black, sans-serif;
     color: #ffffff;
     font-size: 45px;
 }
 
-.heroAsociate .asociateTexto h2 {
+.heroAsociate h2 {
     font-family: gotham-bold, sans-serif;
     color: rgb(207, 207, 207);
     font-size: 25px;
 }
 
-.heroAsociate .asociateTexto p {
+.heroAsociate p {
     font-family: gotham-bold, sans-serif;
     color: rgb(207, 207, 207);
     font-size: 17px;
@@ -341,6 +339,11 @@ div .imgHero:hover {
     border: 1px solid #893aaa;
     font-family: gotham-bold, sans-serif;
     font-size: 18px;
+    outline: none;
+}
+
+.item:focus{
+    border: 2px solid #790fa7;
 }
 
 .boton {
@@ -473,7 +476,6 @@ div .imgHero:hover {
     width: 50%;
     padding: 5px;
     transition: all 500ms ease-out;
-
 }
 
 .gridContainerAsociateGaleria div {
@@ -533,7 +535,6 @@ div .imgHero:hover {
     width: 100%;
     height: 17px;
     background: rgba(212, 180, 226, 0.61);
-
 }
 
 .gridItemAsociate {
@@ -587,7 +588,6 @@ div .imgHero:hover {
     font-family: gotham-black, sans-serif;
     color: #893aaa;
     text-decoration: none;
-
 }
 
 /* -----QUIENES SOMOS----- */
@@ -808,8 +808,7 @@ div .imgHero:hover {
     text-align: center;
 }
 
-.footerCaja h2,
-h3 {
+.footerCaja h2,h3 {
     font-size: 16px;
 }
 
@@ -843,7 +842,7 @@ footer a img {
 .gridContenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120px auto 100px;
+    grid-template-rows: 100px auto 100px;
     grid-template-areas:
         "header header"
         "main main"
@@ -867,11 +866,11 @@ footer a img {
     font-size: 25px;
 }
 
-div .imgHero{
+.hero .imgHero img {
     height: 320px;
-    width: 280px;
+    width: 300px;
 }
-div .imgHero:hover {
+.hero .imgHero img:hover {
     transform: none;
 }
 .especialidades {
@@ -971,7 +970,7 @@ div .imgHero:hover {
 .gridContenedor {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 110px auto 100px;
+    grid-template-rows: 90px auto 100px;
     grid-template-areas:
         "header"
         "main"
@@ -997,6 +996,7 @@ div .imgHero:hover {
     font-family: gotham-black, sans-serif;
     color: rgb(207, 207, 207);
     font-size: 20px;
+    text-align: center;
 }
 .imgHero{
     display: none;
@@ -1116,12 +1116,12 @@ footer a img {
         grid-template-rows: 60px auto 100px;
     }
 header img {
-        width: 220px;
-        height: 50px;
+        width: 210px;
+        height: 60px;
     }
 .hero {
     width: 100%;
-    height: 270px;
+    height: 250px;
 } 
 
 .hero div h1 {
@@ -1242,15 +1242,15 @@ footer a img {
     .heroAsociate {
         height: 400px;
     }
-    .heroAsociate .asociateTexto h1 {
+    .heroAsociate h1 {
         font-size: 35px;
     }
     
-    .heroAsociate .asociateTexto h2 {
+    .heroAsociate h2 {
         font-size: 25px;
     }
     
-    .heroAsociate .asociateTexto p {
+    .heroAsociate p {
         font-size: 15px;
     }
     
@@ -1279,22 +1279,23 @@ footer a img {
 }
 @media screen and (max-width:768px) {
     .heroAsociate {
-        height: 200px;
-        padding: 2px;
-        flex-direction: column;
-        text-align: center;
+        height: 300px;
+        padding-left: 0;
     }
-    .heroAsociate .asociateTexto h1 {
+    .heroAsociate h1 {
         padding-top: 10px;
         font-size: 30px;
+        text-align: center;
     }
     
-    .heroAsociate .asociateTexto h2 {
+    .heroAsociate h2 {
         font-size: 20px;
+        text-align: center;
     }
     
-    .heroAsociate .asociateTexto p {
+    .heroAsociate p {
         font-size: 14px;
+        text-align: center;
     }
     
     .heroAsociate img {
@@ -1325,19 +1326,18 @@ footer a img {
 }
 @media screen and (max-width:480px){
     .heroAsociate {
-        height: 190px;
-        margin-top: 10px;
+        height: 250px;
     }
-    .heroAsociate .asociateTexto h1 {
+    .heroAsociate h1 {
         font-size: 25px;
     }
     
-    .heroAsociate .asociateTexto h2 {
+    .heroAsociate h2 {
         font-size: 20px;
     }
     
-    .heroAsociate .asociateTexto p {
-        font-size: 12px;
+    .heroAsociate p {
+        font-size: 10px;
     }
 
     .formulario {
