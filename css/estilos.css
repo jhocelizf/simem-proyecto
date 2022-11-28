@@ -1,0 +1,1216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: gotham-bold;
+  src: url(../font/gotham-bold.otf); }
+
+@font-face {
+  font-family: gotham-black;
+  src: url(../font/gotham-black.otf); }
+
+@font-face {
+  font-family: gotham-regular;
+  src: url(../font/gotham-regular.otf); }
+
+.gridContenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px auto 100px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+.encabezado {
+  grid-area: header; }
+
+.contenido {
+  grid-area: main;
+  background-color: #ebebeb; }
+
+.pie {
+  grid-area: footer; }
+
+header {
+  width: 100%;
+  background-color: #c9c5cc;
+  height: 100%; }
+  header .navbar {
+    padding: 0; }
+    header .navbar .container-fluid {
+      background-color: #c9c5cc; }
+      header .navbar .container-fluid .navbar-brand img {
+        width: 280px;
+        height: 90px; }
+      header .navbar .container-fluid .navbar-brand .collapse .navbar-collapse .nav-link.active {
+        font-size: small;
+        font-family: gotham-regular, sans-serif;
+        font-weight: 300;
+        transition: 1s ease-out; }
+      header .navbar .container-fluid .navbar-brand:hover {
+        color: #893aaa; }
+
+.hero {
+  width: 100%;
+  height: 470px;
+  background: #893aaa;
+  background: linear-gradient(66deg, #893aaa 45%, #5b0777 56%);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .hero div {
+    font-family: gotham-black, sans-serif;
+    padding: 10px;
+    margin: 20px; }
+    .hero div h1 {
+      color: #ffffff;
+      font-size: 45px;
+      margin-left: 15px; }
+    .hero div h2 {
+      color: #cfcfcf;
+      font-size: 25px;
+      margin-left: 15px; }
+  .hero .imgHero {
+    width: 430px;
+    height: 380px;
+    transition: .5s ease-in; }
+    .hero .imgHero img {
+      width: 430px;
+      height: 380px; }
+    .hero .imgHero:hover {
+      transform: scale(1.2); }
+
+.especialidades {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px; }
+  .especialidades .gridContainerGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: 120px 120px;
+    gap: 15px;
+    padding: 5px;
+    margin: 10px; }
+    .especialidades .gridContainerGaleria .gridItem {
+      font-family: gotham-regular, sans-serif;
+      font-weight: 300;
+      border: 2px solid black;
+      position: relative;
+      text-align: center; }
+      .especialidades .gridContainerGaleria .gridItem h3 {
+        position: absolute;
+        bottom: 0;
+        font-size: 13px;
+        width: 100%;
+        background-color: #e7d8f0; }
+      .especialidades .gridContainerGaleria .gridItem img {
+        height: 75%;
+        width: 80%;
+        padding: 5px; }
+  .especialidades .asociateContenedor h2 {
+    width: 100%;
+    color: black;
+    font-size: 35px;
+    font-family: gotham-black, sans-serif;
+    text-align: left;
+    margin-bottom: 35px; }
+    .especialidades .asociateContenedor h2 span {
+      color: #893aaa; }
+  .especialidades .asociateContenedor p {
+    font-size: 20px;
+    font-family: gotham-bold, sans-serif;
+    margin-bottom: 40px; }
+  .especialidades .asociateContenedor .botonA {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: #c9c5cc;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s;
+    overflow: hidden; }
+    .especialidades .asociateContenedor .botonA:hover {
+      color: #790fa7; }
+    .especialidades .asociateContenedor .botonA span {
+      position: absolute;
+      background-color: #893aaa;
+      transition: 1s; }
+    .especialidades .asociateContenedor .botonA span:nth-child(1) {
+      width: 100%;
+      height: 1px;
+      top: 0;
+      left: -100%; }
+    .especialidades .asociateContenedor .botonA span:nth-child(2) {
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      right: -100%; }
+    .especialidades .asociateContenedor .botonA span:nth-child(3) {
+      width: 1px;
+      height: 100%;
+      bottom: -100%;
+      left: 0; }
+    .especialidades .asociateContenedor .botonA span:nth-child(4) {
+      width: 1px;
+      height: 100%;
+      top: -100%;
+      right: 0; }
+    .especialidades .asociateContenedor .botonA:hover span:nth-child(1) {
+      left: 0; }
+    .especialidades .asociateContenedor .botonA:hover span:nth-child(2) {
+      right: 0; }
+    .especialidades .asociateContenedor .botonA:hover span:nth-child(3) {
+      bottom: 0; }
+    .especialidades .asociateContenedor .botonA:hover span:nth-child(4) {
+      top: 0; }
+    .especialidades .asociateContenedor .botonA a {
+      color: black;
+      font-family: gotham-regular, sans-serif;
+      font-weight: 300;
+      text-decoration: none;
+      padding: 5px; }
+
+.beneficios {
+  width: 95%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px;
+  background-image: url(../img/groovepaper.png); }
+  .beneficios .beneficiosItems {
+    width: 100%; }
+    .beneficios .beneficiosItems h2 {
+      font-size: 35px;
+      font-family: gotham-black, sans-serif;
+      color: #893aaa;
+      text-align: center;
+      padding: 20px; }
+    .beneficios .beneficiosItems ul li {
+      font-size: medium;
+      font-family: gotham-bold, sans-serif;
+      font-weight: 200;
+      padding: 10px; }
+  .beneficios .beneficiosImg img {
+    width: 450px;
+    height: 400px; }
+
+.conocenos {
+  width: 95%;
+  height: 300px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin: 30px; }
+  .conocenos .conocenosHistoria {
+    width: 100%; }
+    .conocenos .conocenosHistoria h2 {
+      font-size: 35px;
+      font-family: gotham-black, sans-serif;
+      color: #893aaa;
+      text-align: center;
+      padding: 10px; }
+    .conocenos .conocenosHistoria p {
+      font-family: gotham-bold, sans-serif;
+      font-size: 15px;
+      margin-bottom: 15px;
+      text-align: center; }
+    .conocenos .conocenosHistoria h3 {
+      font-family: gotham-black, sans-serif;
+      font-size: 20px;
+      text-align: center;
+      color: #893aaa;
+      padding: 15px; }
+  .conocenos .conocenosImg img {
+    width: 300px;
+    height: 300px;
+    padding: 5px; }
+
+.heroAsociate {
+  width: 100%;
+  height: 400px;
+  background: #893aaa;
+  background: linear-gradient(66deg, #893aaa 45%, #5b0777 56%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 20px; }
+  .heroAsociate div h1 {
+    font-family: gotham-black, sans-serif;
+    color: #ffffff;
+    font-size: 45px; }
+  .heroAsociate div h2 {
+    font-family: gotham-bold, sans-serif;
+    color: #cfcfcf;
+    font-size: 25px; }
+  .heroAsociate div p {
+    font-family: gotham-bold, sans-serif;
+    color: #cfcfcf;
+    font-size: 17px; }
+  .heroAsociate .asociateImg img {
+    width: 330px;
+    height: 350px; }
+
+.formulario {
+  width: 900px;
+  padding: 10px;
+  background-color: #c9c5cc;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: gotham-bold, sans-serif;
+  color: black;
+  box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
+  -webkit-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
+  -moz-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75); }
+  .formulario h3 {
+    font-family: gotham-black, sans-serif;
+    font-size: 20px;
+    color: #893aaa;
+    text-align: center;
+    margin-bottom: 20px; }
+  .formulario form label {
+    font-size: 15px; }
+  .formulario form .item {
+    width: 100%;
+    background-color: #c9c5cc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #893aaa;
+    font-family: gotham-bold, sans-serif;
+    font-size: 15px;
+    outline: none; }
+    .formulario form .item:focus {
+      border: 2px solid #790fa7; }
+  .formulario div form h4 {
+    font-family: gotham-black, sans-serif;
+    font-size: 17px; }
+  .formulario div form .boton {
+    font-family: gotham-regular, sans-serif;
+    font-weight: 300;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .formulario div form .boton:hover {
+      color: #790fa7; }
+    .formulario div form .boton span {
+      position: absolute;
+      background-color: #893aaa;
+      transition: 1s; }
+    .formulario div form .boton span:nth-child(1) {
+      width: 100%;
+      height: 1px;
+      top: 0;
+      left: -100%; }
+    .formulario div form .boton span:nth-child(2) {
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      right: -100%; }
+    .formulario div form .boton span:nth-child(3) {
+      width: 1px;
+      height: 100%;
+      bottom: -100%;
+      left: 0; }
+    .formulario div form .boton span:nth-child(4) {
+      width: 1px;
+      height: 100%;
+      top: -100%;
+      right: 0; }
+    .formulario div form .boton:hover span:nth-child(1) {
+      left: 0; }
+    .formulario div form .boton:hover span:nth-child(2) {
+      right: 0; }
+    .formulario div form .boton:hover span:nth-child(3) {
+      bottom: 0; }
+    .formulario div form .boton:hover span:nth-child(4) {
+      top: 0; }
+
+.heroServicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #893aaa;
+  background: linear-gradient(66deg, #893aaa 45%, #5b0777 56%); }
+  .heroServicios .encabezadoServicios h1 {
+    font-family: gotham-black, sans-serif;
+    color: #ffffff;
+    font-size: 45px;
+    padding-left: 100px;
+    padding-bottom: 10px; }
+  .heroServicios .encabezadoServicios h2 {
+    font-family: gotham-black, sans-serif;
+    color: #cfcfcf;
+    font-size: 25px;
+    padding-left: 120px; }
+  .heroServicios .imagenServicios img {
+    width: 400px;
+    height: 400px; }
+
+.especialidadesServicios .especialidadesMedicos h2 {
+  font-family: gotham-black, sans-serif;
+  font-size: 40px;
+  color: #893aaa;
+  background-color: #c9c5cc;
+  text-align: center;
+  margin-top: 10px; }
+
+.especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px 150px 150px 150px 150px;
+  align-content: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+  margin: 10px; }
+  .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria .gridItemAsociate {
+    font-family: gotham-regular, sans-serif;
+    font-weight: 300;
+    border: 2px solid black;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer; }
+    .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria .gridItemAsociate:hover > .capa {
+      opacity: 1;
+      visibility: visible; }
+    .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria .gridItemAsociate:hover > img {
+      transform: scale(1.1); }
+    .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria .gridItemAsociate:hover > .capa h4 {
+      margin-top: 50px;
+      margin-bottom: 10px;
+      font-size: 20px; }
+    .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria .gridItemAsociate h3 {
+      position: absolute;
+      bottom: 0;
+      font-size: 13px;
+      width: 100%;
+      height: 17px;
+      background: rgba(212, 180, 226, 0.61); }
+    .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria .gridItemAsociate img {
+      height: 75%;
+      width: 50%;
+      padding: 5px;
+      transition: all 500ms ease-out; }
+    .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria .gridItemAsociate .capa {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(91, 7, 119, 0.75);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+      .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria .gridItemAsociate .capa h4 {
+        color: white;
+        font-family: gotham-black, sans-serif;
+        transition: all 500ms ease-out;
+        margin-top: 20px; }
+      .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria .gridItemAsociate .capa p {
+        color: white;
+        font-size: 15px;
+        font-family: gotham-bold, sans-serif;
+        text-align: center;
+        line-height: 1.5;
+        width: 100%; }
+
+.ventajasTurnos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px; }
+  .ventajasTurnos .ventajas {
+    width: 100%;
+    margin: 15px;
+    padding: 8px;
+    border: 1px solid black; }
+    .ventajasTurnos .ventajas h2 {
+      font-family: gotham-black, sans-serif;
+      font-size: 30px;
+      color: #893aaa;
+      text-align: center;
+      padding-bottom: 5px; }
+    .ventajasTurnos .ventajas p {
+      font-family: gotham-bold, sans-serif;
+      font-size: 13px;
+      text-align: center; }
+  .ventajasTurnos .turnos {
+    width: 100%;
+    margin: 15px;
+    padding: 8px;
+    border: 1px solid black; }
+    .ventajasTurnos .turnos h2 {
+      font-family: gotham-black, sans-serif;
+      font-size: 30px;
+      color: #893aaa;
+      text-align: center;
+      padding-bottom: 5px; }
+    .ventajasTurnos .turnos h3 {
+      font-family: gotham-black, sans-serif;
+      font-size: 20px;
+      text-align: center;
+      padding-bottom: 5px; }
+    .ventajasTurnos .turnos p {
+      font-family: gotham-bold, sans-serif;
+      text-align: center; }
+      .ventajasTurnos .turnos p a {
+        font-family: gotham-black, sans-serif;
+        color: #893aaa;
+        text-decoration: none; }
+
+.heroQuienesSomos {
+  background: #893aaa;
+  background: linear-gradient(66deg, #893aaa 45%, #5b0777 56%);
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .heroQuienesSomos .encabezadoQuienesSomos h1 {
+    font-family: gotham-black, sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center; }
+  .heroQuienesSomos .encabezadoQuienesSomos p {
+    font-family: gotham-bold, sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    margin: 10px; }
+
+.mision {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .mision .misionDiv {
+    width: 700px;
+    margin-right: 50px; }
+    .mision .misionDiv h2 {
+      font-family: gotham-black, sans-serif;
+      font-size: 35px;
+      color: #893aaa; }
+    .mision .misionDiv p {
+      font-family: gotham-bold, sans-serif;
+      font-size: 16px; }
+  .mision .misionImg img {
+    width: 250px;
+    height: 300px; }
+
+.vision {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center; }
+  .vision .visionDiv {
+    width: 700px;
+    margin-left: 50px; }
+    .vision .visionDiv h2 {
+      font-family: gotham-black, sans-serif;
+      font-size: 35px;
+      color: #893aaa; }
+    .vision .visionDiv p {
+      font-family: gotham-bold, sans-serif;
+      font-size: 16px; }
+  .vision .visionImg img {
+    width: 350px;
+    height: 400px;
+    padding-right: 30px; }
+
+.historia {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; }
+  .historia .nuestraHistoria {
+    width: 700px;
+    margin-right: 50px; }
+    .historia .nuestraHistoria h2 {
+      font-family: gotham-black, sans-serif;
+      font-size: 35px;
+      color: #893aaa; }
+    .historia .nuestraHistoria p {
+      font-family: gotham-bold, sans-serif; }
+  .historia .nuestraHistoriaImg img {
+    width: 450px;
+    height: 330px; }
+
+.heroContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #893aaa;
+  background: linear-gradient(66deg, #893aaa 45%, #5b0777 56%);
+  height: 50px; }
+  .heroContacto .heroTitulo h1 {
+    font-family: gotham-black, sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center; }
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px; }
+  .contacto .mapaContacto {
+    width: 500px;
+    padding-right: 10px; }
+    .contacto .mapaContacto p {
+      font-family: gotham-bold, sans-serif;
+      font-size: 15px; }
+      .contacto .mapaContacto p::first-letter {
+        font-size: 20px; }
+  .contacto .numeros h3 {
+    font-family: gotham-black, sans-serif;
+    font-size: 17px; }
+  .contacto .numeros ul li {
+    width: 90px;
+    list-style: none;
+    text-align: center;
+    background-color: #c9c5cc;
+    color: black;
+    border-radius: 4px; }
+  .contacto .direccion h3 {
+    font-family: gotham-black, sans-serif;
+    font-size: 17px; }
+  .contacto .direccion p {
+    font-family: gotham-bold, sans-serif;
+    font-size: 15px; }
+
+form .formularioContacto {
+  width: 500px;
+  padding: 30px;
+  background-color: #c9c5cc;
+  font-family: gotham-bold, sans-serif;
+  font-size: 15px;
+  color: black;
+  box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
+  -webkit-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
+  -moz-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75); }
+  form .formularioContacto h3 {
+    font-family: gotham-black, sans-serif;
+    font-size: 17px;
+    margin-top: 8px;
+    color: #893aaa; }
+  form .formularioContacto .control {
+    width: 100%;
+    background-color: #c9c5cc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #893aaa; }
+  form .formularioContacto .boton {
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-family: gotham-regular, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    margin: 12px 0; }
+
+.footerCaja {
+  height: 100px;
+  font-family: gotham-bold, sans-serif;
+  font-size: 16px;
+  background-color: #c9c5cc;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+  .footerCaja .footerH {
+    order: 2;
+    text-align: center; }
+    .footerCaja .footerH h2 {
+      font-size: 16px; }
+  .footerCaja .footerA {
+    order: 1; }
+    .footerCaja .footerA a {
+      text-decoration: none;
+      color: black; }
+      .footerCaja .footerA a img {
+        width: 70px;
+        height: 70px; }
+  .footerCaja .footerRedes {
+    order: 3;
+    text-align: center; }
+    .footerCaja .footerRedes h3 {
+      font-size: 16px; }
+    .footerCaja .footerRedes a img {
+      width: 50px;
+      height: 50px; }
+    .footerCaja .footerRedes a img {
+      width: 50px;
+      height: 50px; }
+
+/*-- INDEX---- MEDIA QUERIE-----RESPONSIVE-- */
+@media screen and (max-width: 1024px) {
+  .gridContenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "header header" "main main" "footer footer"; }
+  .hero {
+    width: 100%;
+    height: 400px; }
+  .hero div h1 {
+    font-family: gotham-black, sans-serif;
+    color: #ffffff;
+    font-size: 35px; }
+  .hero div h2 {
+    font-family: gotham-black, sans-serif;
+    color: #cfcfcf;
+    font-size: 25px; }
+  .hero .imgHero img {
+    height: 320px;
+    width: 300px; }
+  .hero .imgHero:hover {
+    transform: none; }
+  .especialidades {
+    height: 300px; }
+  .especialidades .gridContainerGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: 110px 110px;
+    gap: 10px; }
+  .especialidades .gridContainerGaleria .gridItem img {
+    height: 70%;
+    width: 75%;
+    padding: 5px; }
+  .especialidades.gridContainerGaleria .gridItem h3 {
+    font-size: 10px; }
+  .especialidades .asociateContenedor {
+    height: 300px; }
+  .especialidades .asociateContenedor h2 {
+    width: 80%;
+    font-size: 25px;
+    margin-bottom: 10px; }
+  .especialidades .asociateContenedor p {
+    font-size: 18px;
+    margin-bottom: 10px; }
+  .botonA {
+    height: 40px;
+    padding: 10px;
+    margin: 5px; }
+  .especialidades .asociateContenedor a {
+    height: 30px;
+    font-size: 12px;
+    padding-top: 5px; }
+  .beneficios {
+    height: 350px; }
+  .beneficios .beneficiosItems h2 {
+    font-size: 25px; }
+  .beneficios .beneficiosItems ul li {
+    font-size: 18px;
+    padding: 5px; }
+  .beneficios .beneficiosImg img {
+    width: 290px;
+    height: 300px; }
+  .conocenos {
+    height: 350px; }
+  .conocenos .conocenosHistoria h2 {
+    font-size: 25px; }
+  .conocenos .conocenosHistoria p {
+    font-family: gotham-bold, sans-serif;
+    font-size: 15px;
+    margin-bottom: 5px; }
+  .conocenos .conocenosImg {
+    width: 290px;
+    height: 300px; }
+  .conocenos .conocenosImg img {
+    width: 290px;
+    height: 300px;
+    padding: 5px; }
+  .footerCaja {
+    font-size: 5px; } }
+
+@media screen and (max-width: 768px) {
+  header img {
+    width: 250px;
+    height: 80px; }
+  .gridContenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px auto 100px;
+    grid-template-areas: "header" "main" "footer"; }
+  .hero {
+    width: 100%;
+    height: 300px;
+    flex-direction: column; }
+  .hero div h1 {
+    font-family: gotham-black, sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 15px; }
+  .hero div h2 {
+    font-family: gotham-black, sans-serif;
+    color: #cfcfcf;
+    font-size: 20px;
+    text-align: center; }
+  .hero .imgHero {
+    display: none; }
+  .especialidades {
+    height: 250px;
+    justify-content: center;
+    align-items: center; }
+  .especialidades .gridContainerGaleria {
+    display: none; }
+  .especialidades .asociateContenedor {
+    height: 250px;
+    margin-top: 10px;
+    padding: 15px; }
+  .especialidades .asociateContenedor h2 {
+    width: 80%;
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .especialidades .asociateContenedor p {
+    font-size: 15px;
+    margin-bottom: 10px; }
+  .especialidades .asociateContenedor .botonA {
+    height: 35px;
+    margin: 5px; }
+  .especialidades .asociateContenedor a {
+    height: 25px;
+    font-size: 12px;
+    padding: 5px 5px 5px; }
+  .beneficios {
+    height: 500px;
+    flex-direction: column;
+    align-items: center; }
+  .beneficios .beneficiosItems h2 {
+    font-size: 20px; }
+  .beneficios .beneficiosItems ul li {
+    font-size: 15px;
+    padding: 5px; }
+  .beneficios .beneficiosImg img {
+    width: 280px;
+    height: 290px; }
+  .conocenos {
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; }
+  .conocenos .conocenosHistoria h2 {
+    font-size: 20px; }
+  .conocenos .conocenosHistoria h3 {
+    font-size: 18px; }
+  .conocenos .conocenosHistoria p {
+    font-family: gotham-bold, sans-serif;
+    font-size: 15px;
+    margin-bottom: 5px; }
+  .conocenos .conocenosImg {
+    width: 290px;
+    height: 300px; }
+  .conocenos .conocenosImg img {
+    width: 280px;
+    height: 280px;
+    padding: 5px; }
+  .footerCaja {
+    width: 100%;
+    height: 110px;
+    font-size: small;
+    flex-direction: column;
+    align-items: center; }
+  .footerCaja .footerA a img {
+    width: 20px;
+    height: 20px; } }
+
+@media screen and (max-width: 480px) {
+  .gridContenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto 100px; }
+  header img {
+    width: 210px;
+    height: 60px; }
+  .hero {
+    width: 100%;
+    height: 250px; }
+  .hero div h1 {
+    font-family: gotham-black, sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 5px; }
+  .hero div h2 {
+    font-size: 20px; }
+  .especialidades {
+    height: 200px; }
+  .especialidades .asociateContenedor {
+    height: 200px;
+    margin-top: 10px;
+    padding: 15px; }
+  .especialidades .asociateContenedor h2 {
+    width: 80%;
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .especialidades .asociateContenedor p {
+    font-size: 12px;
+    margin-bottom: 10px; }
+  .botonA {
+    height: 30px;
+    padding: 2px;
+    margin: 5px; }
+  .especialidades .asociateContenedor a {
+    height: 28px;
+    font-size: 10px; }
+  .beneficios {
+    height: 500px;
+    margin: 5px;
+    justify-content: center; }
+  .beneficios .beneficiosItems h2 {
+    font-size: 20px; }
+  .beneficios .beneficiosItems ul li {
+    font-size: 12px;
+    padding: 5px; }
+  .beneficios .beneficiosImg img {
+    width: 260px;
+    height: 260px; }
+  .conocenos {
+    width: 100%;
+    height: 500px; }
+  .conocenos .conocenosHistoria h2 {
+    font-size: 20px; }
+  .conocenos .conocenosHistoria h3 {
+    font-size: 15px; }
+  .conocenos .conocenosHistoria p {
+    font-size: 12px;
+    margin-bottom: 5px; }
+  .conocenos .conocenosImg {
+    width: 260px;
+    height: 260px; }
+  .conocenos .conocenosImg img {
+    width: 260px;
+    height: 260px;
+    padding: 5px; }
+  .footerCaja {
+    width: 100%;
+    height: 110px;
+    font-size: small;
+    flex-direction: column;
+    align-items: center; }
+  .footerCaja .footerH h2 {
+    font-size: 13px; }
+  .footerCaja .footerA a img {
+    width: 20px;
+    height: 20px; }
+  .footerCaja .footerRedes h3 {
+    font-size: 13px; } }
+
+/* ASOCIATE ---- MEDIA QUERIE--- RESPONSIVE */
+@media screen and (max-width: 1024px) {
+  .heroAsociate {
+    height: 400px; }
+  .heroAsociate div h1 {
+    font-size: 35px; }
+  .heroAsociate div h2 {
+    font-size: 25px; }
+  .heroAsociate div p {
+    font-size: 15px; }
+  .heroAsociate .asociateImg img {
+    width: 290px;
+    height: 280px; }
+  .formulario {
+    width: 800px;
+    font-size: 15px; }
+  .formulario h3 {
+    font-size: 20px; }
+  .formulario div form h4 {
+    font-size: 18px; }
+  .formulario form label {
+    font-size: 15px; }
+  .formulario div form .boton {
+    font-size: 15px; } }
+
+@media screen and (max-width: 768px) {
+  .heroAsociate {
+    height: 300px;
+    padding-left: 0; }
+  .heroAsociate div h1 {
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center; }
+  .heroAsociate div h2 {
+    font-size: 20px;
+    text-align: center; }
+  .heroAsociate div p {
+    font-size: 14px;
+    text-align: center; }
+  .heroAsociate .asociateImg img {
+    display: none; }
+  .formulario {
+    width: 600px;
+    font-size: 13px; }
+  .formulario h3 {
+    font-size: 18px; }
+  .formulario div form h4 {
+    font-size: 15px; }
+  .formulario form label {
+    font-size: 15px; }
+  .formulario form .item {
+    height: 35px;
+    font-size: 14px; }
+  .formulario div form .boton {
+    font-size: 13px; } }
+
+@media screen and (max-width: 480px) {
+  .heroAsociate {
+    height: 250px; }
+  .heroAsociate div h1 {
+    font-size: 25px; }
+  .heroAsociate div h2 {
+    font-size: 20px; }
+  .heroAsociate div p {
+    font-size: 10px; }
+  .formulario {
+    width: 350px;
+    font-size: 12px; }
+  .formulario h3 {
+    font-size: 15px; }
+  .formulario div form h4 {
+    font-size: 13px; }
+  .formulario form label {
+    font-size: 13px; }
+  .formulario form .item {
+    height: 30px;
+    font-size: 12px; }
+  .formulario div form .boton {
+    font-size: 12px; } }
+
+/* SERVICIOS ---- MEDIA QUERIE--- RESPONSIVE */
+@media screen and (max-width: 1024px) {
+  .heroServicios {
+    width: 100%;
+    height: 400px; }
+  .heroServicios .encabezadoServicios h1 {
+    font-size: 35px; }
+  .heroServicios .imagenServicios img {
+    width: 280px;
+    height: 280px; }
+  .especialidadesServicios .especialidadesMedicos h2 {
+    font-size: 35px; }
+  .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-template-rows: 150px 150px 150px 150px 150px; }
+  .ventajasTurnos {
+    height: 220px; } }
+
+@media screen and (max-width: 768px) {
+  .heroServicios {
+    height: 300px;
+    justify-content: center; }
+  .heroServicios .encabezadoServicios h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0; }
+  .heroServicios .encabezadoServicios h2 {
+    font-size: 20px; }
+  .heroServicios .imagenServicios img {
+    display: none; }
+  .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: 150px 150px 150px 150px 150px; }
+  .ventajasTurnos {
+    flex-direction: column;
+    height: 350px;
+    width: 100%; }
+  .ventajasTurnos .ventajas {
+    margin-bottom: 5px;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 8px 0px 8px 0px; }
+  .ventajasTurnos .turnos {
+    margin-bottom: 5px;
+    margin-left: 0;
+    padding: 8px 0px 8px 0px; } }
+
+@media screen and (max-width: 480px) {
+  .heroServicios {
+    height: 250px; }
+  .heroServicios .encabezadoServicios h1 {
+    font-size: 25px; }
+  .heroServicios .encabezadoServicios h2 {
+    font-size: 15px; }
+  .especialidadesServicios .especialidadesMedicos h2 {
+    font-size: 20px; }
+  .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria {
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: 150px 150px 150px 150px 150px; }
+  .ventajasTurnos {
+    height: 350px;
+    width: 100%; }
+  .ventajasTurnos .ventajas h2 {
+    font-size: 15px; }
+  .ventajasTurnos .ventajas p {
+    font-size: 12px; }
+  .ventajasTurnos .turnos h2 {
+    font-size: 15px; }
+  .ventajasTurnos .turnos h3 {
+    font-size: 14px; }
+  .ventajasTurnos .turnos p {
+    font-size: 12px; } }
+
+/* QUIENES SOMOS ---- MEDIA QUERIE--- RESPONSIVE */
+@media screen and (max-width: 1024px) {
+  .heroQuienesSomos .encabezadoQuienesSomos h1 {
+    font-size: 35px; }
+  .heroQuienesSomos .encabezadoQuienesSomos p {
+    font-size: 18px; }
+  .mision .misionDiv h2 {
+    font-size: 30px; }
+  .mision .misionDiv p {
+    font-size: 15px; }
+  .mision .misionImg img {
+    width: 230px;
+    height: 290px; }
+  .vision .visionDiv h2 {
+    font-size: 30px; }
+  .vision .visionDiv p {
+    font-size: 15px; }
+  .vision .visionImg img {
+    width: 330px;
+    height: 380px; }
+  .historia .nuestraHistoria h2 {
+    font-size: 30px; }
+  .historia .nuestraHistoria p {
+    font-size: 15px; }
+  .historia .nuestraHistoriaImg img {
+    width: 430px;
+    height: 320px; } }
+
+@media screen and (max-width: 768px) {
+  .heroQuienesSomos .encabezadoQuienesSomos h1 {
+    font-size: 30px; }
+  .heroQuienesSomos .encabezadoQuienesSomos p {
+    font-size: 15px; }
+  .mision .misionDiv {
+    width: 100%; }
+  .mision .misionDiv h2 {
+    font-size: 25px; }
+  .vision .visionDiv {
+    width: 100%; }
+  .vision .visionDiv h2 {
+    font-size: 25px; }
+  .historia .nuestraHistoria {
+    width: 100%; }
+  .historia .nuestraHistoria h2 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 480px) {
+  .heroQuienesSomos .encabezadoQuienesSomos h1 {
+    font-size: 25px; }
+  .heroQuienesSomos .encabezadoQuienesSomos p {
+    font-size: 15px; }
+  .mision {
+    flex-direction: column;
+    height: 440px; }
+  .mision .misionDiv {
+    margin-right: 0; }
+  .mision .misionDiv h2 {
+    font-size: 20px;
+    text-align: center; }
+  .mision .misionDiv p {
+    font-size: 12px; }
+  .mision .misionImg img {
+    width: 200px;
+    height: 260px; }
+  .vision {
+    flex-direction: column;
+    height: 410px;
+    margin-top: 10px; }
+  .vision .visionDiv {
+    margin-left: 0; }
+  .vision .visionDiv h2 {
+    font-size: 20px;
+    text-align: center; }
+  .vision .visionDiv p {
+    font-size: 12px; }
+  .vision .visionImg img {
+    width: 230px;
+    height: 290px; }
+  .historia {
+    flex-direction: column;
+    height: 400px;
+    margin-top: 10px; }
+  .historia .nuestraHistoria {
+    margin-right: 0; }
+  .historia .nuestraHistoria h2 {
+    font-size: 20px;
+    text-align: center; }
+  .historia .nuestraHistoria p {
+    font-size: 12px; }
+  .historia .nuestraHistoriaImg img {
+    width: 300px;
+    height: 250px; } }
+
+/* CONTACTOS ---- MEDIA QUERIE--- RESPONSIVE */
+@media screen and (max-width: 1024px) {
+  .heroContacto .heroTitulo h1 {
+    font-size: 35px; } }
+
+@media screen and (max-width: 768px) {
+  .heroContacto .heroTitulo h1 {
+    font-size: 30px; }
+  form .formularioContacto {
+    width: 400px;
+    margin-bottom: 15px; } }
+
+@media screen and (max-width: 480px) {
+  .heroContacto {
+    height: 80px;
+    margin-top: 20px; }
+  .heroContacto .heroTitulo h1 {
+    font-size: 25px; }
+  .contacto {
+    flex-direction: column; }
+  .contacto .mapaContacto p {
+    text-align: center; }
+  form .formularioContacto {
+    width: 350px;
+    margin-top: 15px;
+    margin-bottom: 10px; }
+  form .formularioContacto h3 {
+    font-size: 15px; } }

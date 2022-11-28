@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: gotham-bold;
+    src: url(../font/gotham-bold.otf);
+}
+
+@font-face {
+    font-family: gotham-black;
+    src: url(../font/gotham-black.otf);
+}
+
+@font-face {
+    font-family: gotham-regular;
+    src: url(../font/gotham-regular.otf);
+}
+
+.gridContenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+.encabezado {
+    grid-area: header;
+}
+
+.contenido {
+    grid-area: main;
+    background-color: rgb(235, 235, 235);
+}
+
+.pie {
+    grid-area: footer;
+}
