@@ -149,6 +149,7 @@
         text-align: center;
         margin-top: 10px;
         padding-top: 15px;
+        margin-left: 0;
     }
     
     .hero div h2 {
@@ -156,6 +157,7 @@
         color: rgb(207, 207, 207);
         font-size: 20px;
         text-align: center;
+        margin-left: 0;
     }
     .hero .imgHero{
         display: none;
@@ -241,7 +243,6 @@
         height: 280px;
         padding: 5px;
     }
-    
     .footerCaja {
         width: 100%;
         height: 110px;
@@ -249,10 +250,21 @@
         flex-direction: column;
         align-items: center;
     }
+    .footerCaja .footerH h2 {
+        font-size: 13px;
+        margin: 0;
+    }
     
     .footerCaja .footerA a img {
         width: 20px;
         height: 20px;
+    }
+    .footerCaja .footerRedes h3{
+        font-size: 13px;
+    }
+    .footerCaja .footerRedes a img{
+        width: 15px;
+        height: 15px;
     }
     }
     
@@ -262,7 +274,7 @@
             grid-template-columns: 1fr;
             grid-template-rows: 60px auto 100px;
         }
-    header img {
+    .encabezado .navbar .container-fluid .navbar-brand img {
             width: 210px;
             height: 60px;
         }
@@ -358,24 +370,6 @@
         width: 260px;
         height: 260px;
         padding: 5px;
-    }
-    .footerCaja {
-        width: 100%;
-        height: 110px;
-        font-size: small;
-        flex-direction: column;
-        align-items: center;
-    }
-    .footerCaja .footerH h2 {
-        font-size: 13px;
-    }
-    
-    .footerCaja .footerA a img {
-        width: 20px;
-        height: 20px;
-    }
-    .footerCaja .footerRedes h3{
-        font-size: 13px;
     }
     }
     

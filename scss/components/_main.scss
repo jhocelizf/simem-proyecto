@@ -16,24 +16,24 @@
         h1{
             color: #ffffff;
             font-size: 45px;
-            margin-left: 15px;
+            margin-left: 100px;
         }
         h2{
             color: rgb(207, 207, 207);
             font-size: 25px;
-            margin-left: 15px;
+            margin-left: 100px;
         }
     }
     .imgHero{
-        width: 430px;
+        width: 450px;
         height: 380px;
         transition: .5s ease-in;
         img{
-            width: 430px;
+            width: 450px;
             height: 380px;
         }
         &:hover{
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
     }
 }
@@ -728,17 +728,72 @@ form{
             border-radius: 4px;
             margin-bottom: 15px;
             border: 1px solid #893aaa;
+            &:focus {
+                border: 5px solid #790fa7;
+            }
         }
-        .boton{
-            width: 100%;
-            background-color: white;
-            color: black;
+        .botonC{
             font-family: gotham-regular, sans-serif;
             font-weight: 300;
-            font-size: 15px;
+            width: 100%;
+            position: relative;
+            margin-top: 10px;
+            padding: 10px 15px;
             border: none;
-            padding: 10px;
-            margin: 12px 0;
+            outline: none;
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 1s;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &:hover{
+                color: #790fa7;
+            }
+            span{
+                position: absolute;
+                background-color: #893aaa;
+                transition: 1s;
+                }
+                span:nth-child(1){
+                    width: 100%;
+                    height: 1px;
+                    top: 0;
+                    left: -100%;
+                }
+                span:nth-child(2){
+                    width: 100%;
+                    height: 1px;
+                    bottom: 0;
+                    right: -100%;
+                }
+                span:nth-child(3){
+                    width: 1px;
+                    height: 100%;
+                    bottom: -100%;
+                    left: 0;
+                }
+                span:nth-child(4){
+                    width: 1px;
+                    height: 100%;
+                    top: -100%;
+                    right: 0;
+                }
+                &:hover span:nth-child(1) {
+                    left: 0;
+                }
+                &:hover span:nth-child(2){
+                    right: 0;
+                }
+                &:hover span:nth-child(3){
+                    bottom: 0;
+                }
+                &:hover span:nth-child(4){
+                    top: 0;
+                }
         }
     }
 }

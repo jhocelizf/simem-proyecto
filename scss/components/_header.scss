@@ -1,4 +1,4 @@
-header{
+.encabezado{
     width: 100%;
     background-color: #c9c5cc;
     height: 100%;
@@ -11,21 +11,16 @@ header{
                     width: 280px;
                     height: 90px;
                 }
-            .collapse .navbar-collapse .nav-link.active{
-                    font-size: small;
-                    font-family: gotham-regular, sans-serif;
-                    font-weight: 300;
-                    transition: 1s ease-out;
-                }
-                &:hover{
+            }
+            .collapse .nav-link.active{
+                font-size: small;
+                font-family: gotham-regular, sans-serif;
+                font-weight: 300;
+                transition: 1s ease;
+                &:hover {
                     color: #893aaa;
-                }
-                ul{
-                    li{
-
                     }
                 }
-            }   
         }
     }
 }
