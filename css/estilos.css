@@ -1121,11 +1121,12 @@
     font-size: 20px; }
   .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria {
     display: grid;
-    grid-template-columns: repeat(1, 250px);
-    grid-template-rows: 150px 150px 150px 150px 150px; }
+    grid-template-columns: repeat(1, 220px);
+    grid-template-rows: repeat(22, 150px); }
   .ventajasTurnos {
     height: 350px;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 15px; }
   .ventajasTurnos .ventajas h2 {
     font-size: 15px; }
   .ventajasTurnos .ventajas p {
@@ -1146,21 +1147,25 @@
   .mision .misionDiv h2 {
     font-size: 30px; }
   .mision .misionDiv p {
-    font-size: 15px; }
+    font-size: 15px;
+    padding-left: 10px; }
   .mision .misionImg img {
     width: 230px;
     height: 290px; }
   .vision .visionDiv h2 {
     font-size: 30px; }
   .vision .visionDiv p {
-    font-size: 15px; }
+    font-size: 15px;
+    padding-left: 10px; }
   .vision .visionImg img {
     width: 330px;
-    height: 380px; }
+    height: 380px;
+    margin-bottom: 10px; }
   .historia .nuestraHistoria h2 {
     font-size: 30px; }
   .historia .nuestraHistoria p {
-    font-size: 15px; }
+    font-size: 15px;
+    padding-left: 10px; }
   .historia .nuestraHistoriaImg img {
     width: 430px;
     height: 320px; } }
@@ -1246,12 +1251,16 @@
   .heroContacto .heroTitulo h1 {
     font-size: 25px; }
   .contacto {
+    width: 100%;
     flex-direction: column;
     justify-content: center; }
+  .contacto .mapaContacto {
+    width: 100%; }
   .contacto .mapaContacto p {
     text-align: center; }
-  form .formularioContacto {
+  .contacto form .formularioContacto {
+    width: 90%;
     margin-top: 15px;
     margin-bottom: 10px; }
-  form .formularioContacto h3 {
+  .contacto form .formularioContacto h3 {
     font-size: 15px; } }
