@@ -18,13 +18,13 @@
     .hero div h1 {
         font-family: gotham-black, sans-serif;
         color: #ffffff;
-        font-size: 35px;
+        font-size: nth($font-size,3);
     }
     
     .hero div h2 {
         font-family: gotham-black, sans-serif;
         color: rgb(207, 207, 207);
-        font-size: 25px;
+        font-size: nth($font-size,5);
     }
     
     .hero .imgHero img {
@@ -50,7 +50,7 @@
         padding: 5px;
     }
     .especialidades.gridContainerGaleria .gridItem h3 {
-        font-size: 10px;
+        font-size: nth($font-size,12);
     }
     .especialidades .asociateContenedor {
         height: 300px;
@@ -58,11 +58,11 @@
     
     .especialidades .asociateContenedor h2 {
         width: 80%;
-        font-size: 25px;
+        font-size: nth($font-size,5);
         margin-bottom: 10px;
     }
     .especialidades .asociateContenedor p{
-        font-size: 18px;
+        font-size: nth($font-size,7);
         margin-bottom: 10px;
     }
     .botonA{
@@ -72,7 +72,7 @@
     }
     .especialidades .asociateContenedor a{
         height: 30px;
-        font-size: 12px;
+        font-size: nth($font-size,10);
         padding-top: 5px;
     }
     
@@ -81,11 +81,11 @@
     }
     
     .beneficios .beneficiosItems h2 {
-        font-size: 25px;
+        font-size: nth($font-size,5);
     }
     
     .beneficios .beneficiosItems ul li {
-        font-size: 18px;
+        font-size: nth($font-size,7);
         padding: 5px;
     }
     
@@ -98,12 +98,12 @@
     }
     
     .conocenos .conocenosHistoria h2 {
-        font-size: 25px;
+        font-size: nth($font-size,5);
     }
     
     .conocenos .conocenosHistoria p {
         font-family: gotham-bold, sans-serif;
-        font-size: 15px;
+        font-size: nth($font-size,8);
         margin-bottom: 5px;
     } 
     .conocenos .conocenosImg {
@@ -117,7 +117,7 @@
         padding: 5px;
     }
     .footerCaja {
-        font-size: 5px;
+        font-size: nth($font-size,12);
     }
     }
     
@@ -147,8 +147,8 @@
     
     .hero div h1 {
         font-family: gotham-black, sans-serif;
-        color: #ffffff;
-        font-size: 30px;
+        color: $color-blanco;
+        font-size: nth($font-size,4);
         text-align: center;
         margin-top: 10px;
         padding-top: 15px;
@@ -180,11 +180,11 @@
     }
     .especialidades .asociateContenedor h2 {
         width: 80%;
-        font-size: 20px;
+        font-size: nth($font-size,6);
         margin-bottom: 10px;
     }
     .especialidades .asociateContenedor p{
-        font-size: 15px;
+        font-size: nth($font-size,8);
         margin-bottom: 10px;
     }
     .especialidades .asociateContenedor .botonA{
@@ -193,7 +193,7 @@
     }
     .especialidades .asociateContenedor a{
         height: 25px;
-        font-size: 12px;
+        font-size: nth($font-size,10);
         padding: 5px 5px 5px;
     }
     .beneficios {
@@ -203,11 +203,11 @@
     }
     
     .beneficios .beneficiosItems h2 {
-        font-size: 20px;
+        font-size: nth($font-size,6);
     }
     
     .beneficios .beneficiosItems ul li {
-        font-size: 15px;
+        font-size: nth($font-size,8);
         padding: 5px;
     }
     
@@ -223,16 +223,16 @@
     }
     
     .conocenos .conocenosHistoria h2 {
-        font-size: 20px;
+        font-size: nth($font-size,6);
     }
     
     .conocenos .conocenosHistoria h3{
-        font-size: 18px;
+        font-size: nth($font-size,7);
     }
     
     .conocenos .conocenosHistoria p {
         font-family: gotham-bold, sans-serif;
-        font-size: 15px;
+        font-size: nth($font-size,8);
         margin-bottom: 5px;
     }
     
@@ -263,7 +263,7 @@
         height: 20px;
     }
     .footerCaja .footerRedes h3{
-        font-size: 13px;
+        font-size: nth($font-size,9);
     }
     .footerCaja .footerRedes a img{
         width: 15px;
@@ -291,15 +291,15 @@
     
     .hero div h1 {
         font-family: gotham-black, sans-serif;
-        color: #ffffff;
-        font-size: 25px;
+        color: $color-blanco;
+        font-size: nth($font-size,5);
         text-align: center;
         margin-top: 10px;
         padding-top: 5px;
     }
     
     .hero div h2 {
-        font-size: 20px;
+        font-size: nth($font-size,6);
     }
     
     .especialidades {
@@ -314,11 +314,11 @@
     
     .especialidades .asociateContenedor h2 {
         width: 80%;
-        font-size: 20px;
+        font-size: nth($font-size,6);
         margin-bottom: 10px;
     }
     .especialidades .asociateContenedor p{
-        font-size: 12px;
+        font-size: nth($font-size,10);
         margin-bottom: 10px;
     }
     .botonA{
@@ -328,7 +328,7 @@
     }
     .especialidades .asociateContenedor a{
         height: 28px;
-        font-size: 10px;
+        font-size: nth($font-size,11);
     }
     .beneficios {
         height: 500px;
@@ -337,11 +337,11 @@
     }
     
     .beneficios .beneficiosItems h2 {
-        font-size: 20px;
+        font-size: nth($font-size,6);
     }
     
     .beneficios .beneficiosItems ul li {
-        font-size: 12px;
+        font-size: nth($font-size,10);
         padding: 5px;
     }
     
@@ -355,15 +355,15 @@
     }
     
     .conocenos .conocenosHistoria h2 {
-        font-size: 20px;
+        font-size: nth($font-size,6);
     }
     
     .conocenos .conocenosHistoria h3{
-        font-size: 15px;
+        font-size: nth($font-size,8);
     }
     
     .conocenos .conocenosHistoria p {
-        font-size: 12px;
+        font-size: nth($font-size,10);
         margin-bottom: 5px;
     }
     
@@ -386,15 +386,15 @@
             height: 400px;
         }
         .heroAsociate div h1 {
-            font-size: 35px;
+            font-size: nth($font-size,3);
         }
         
         .heroAsociate div h2 {
-            font-size: 25px;
+            font-size: nth($font-size,5);
         }
         
         .heroAsociate div p {
-            font-size: 15px;
+            font-size: nth($font-size,8);
         }
         
         .heroAsociate .asociateImg img {
@@ -403,21 +403,21 @@
         } 
         .formulario {
             width: 800px;
-            font-size: 15px;
+            font-size: nth($font-size,8);
         }
         .formulario h3 {
-            font-size: 20px;
+            font-size: nth($font-size,6);
         }
     
         .formulario div form h4 {
-            font-size: 18px;
+            font-size: nth($font-size,7);
         }
     
         .formulario form label {
-            font-size: 15px;
+            font-size: nth($font-size,8);
         }
         .formulario div form .boton{
-            font-size: 15px;
+            font-size: nth($font-size,8);
         }
     }
     @media screen and (max-width:768px) {
@@ -427,17 +427,17 @@
         }
         .heroAsociate div h1 {
             padding-top: 10px;
-            font-size: 30px;
+            font-size: nth($font-size,4);
             text-align: center;
         }
         
         .heroAsociate div h2 {
-            font-size: 20px;
+            font-size: nth($font-size,6);
             text-align: center;
         }
         
         .heroAsociate div p {
-            font-size: 14px;
+            font-size: nth($font-size,9);
             text-align: center;
         }
         
@@ -446,22 +446,22 @@
         } 
         .formulario {
             width: 600px;
-            font-size: 13px;
+            font-size: nth($font-size,9);
         }
         .formulario h3 {
-            font-size: 18px;
+            font-size: nth($font-size,7);
         }
     
         .formulario div form h4 {
-            font-size: 15px;
+            font-size: nth($font-size,8);
         }
     
         .formulario form label {
-            font-size: 15px;
+            font-size: nth($font-size,8);
         }
         .formulario form .item{
             height: 35px;
-            font-size: 14px;
+            font-size: nth($font-size,9);
         }
         .formulario div form .boton{
             font-size: 13px;
@@ -472,38 +472,38 @@
             height: 250px;
         }
         .heroAsociate div h1 {
-            font-size: 25px;
+            font-size: nth($font-size,5);
         }
         
         .heroAsociate div h2 {
-            font-size: 20px;
+            font-size: nth($font-size,6);
         }
         
         .heroAsociate div p {
-            font-size: 10px;
+            font-size: nth($font-size,11);
         }
     
         .formulario {
             width: 350px;
-            font-size: 12px;
+            font-size: nth($font-size,10);
         }
         .formulario h3 {
-            font-size: 15px;
+            font-size: nth($font-size,8);
         }
     
         .formulario div form h4 {
-            font-size: 13px;
+            font-size: nth($font-size,9);
         }
     
         .formulario form label {
-            font-size: 13px;
+            font-size: nth($font-size,9);
         }
         .formulario form .item{
             height: 30px;
-            font-size: 12px;
+            font-size: nth($font-size,10);
         }
         .formulario div form .boton{
-            font-size: 12px;
+            font-size: nth($font-size,10);
         }
     }
  /* SERVICIOS ---- MEDIA QUERIE--- RESPONSIVE */
@@ -513,14 +513,14 @@
     height: 400px;
 }
 .heroServicios .encabezadoServicios h1{
-    font-size: 35px;
+    font-size: nth($font-size,3);
 }
 .heroServicios .imagenServicios img{
     width: 280px;
     height: 280px;
 }
 .especialidadesServicios .especialidadesMedicos h2{
-    font-size: 35px;
+    font-size: nth($font-size,3);
 }
 .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria{
     display: grid;
@@ -537,12 +537,12 @@
         justify-content: center;
     }
     .heroServicios .encabezadoServicios h1{
-        font-size: 30px;
+        font-size: nth($font-size,4);
         text-align: center;
         padding-left: 0;
     }
     .heroServicios .encabezadoServicios h2{
-        font-size: 20px;
+        font-size: nth($font-size,6);
     }
     .heroServicios .imagenServicios img{
         display: none;
@@ -574,13 +574,13 @@
         height: 200px;
     }
     .heroServicios .encabezadoServicios h1{
-        font-size: 25px;
+        font-size: nth($font-size,5);
     }
     .heroServicios .encabezadoServicios h2{
-        font-size: 15px;
+        font-size: nth($font-size,8);
     }
     .especialidadesServicios .especialidadesMedicos h2{
-        font-size: 20px;
+        font-size: nth($font-size,6);
     }
     .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria{
         display: grid;
@@ -593,34 +593,34 @@
         margin-bottom: 15px;
     }
     .ventajasTurnos .ventajas h2{
-        font-size: 15px;
+        font-size: nth($font-size,8);
     }
     .ventajasTurnos .ventajas p{
-        font-size: 12px;
+        font-size: nth($font-size,10);
     }
     .ventajasTurnos .turnos h2{
-        font-size: 15px;
+        font-size: nth($font-size,8);
     }
     .ventajasTurnos .turnos h3{
-        font-size: 14px;
+        font-size: nth($font-size,9);
     }
     .ventajasTurnos .turnos p{
-        font-size: 12px;
+        font-size: nth($font-size,10);
     }
 }
 /* QUIENES SOMOS ---- MEDIA QUERIE--- RESPONSIVE */
 @media screen and (max-width:1024px){
 .heroQuienesSomos .encabezadoQuienesSomos h1{
-    font-size: 35px;
+    font-size: nth($font-size,3);
 }
 .heroQuienesSomos .encabezadoQuienesSomos p{
-    font-size: 18px;
+    font-size: nth($font-size,7);
 }
 .mision .misionDiv h2{
-    font-size: 30px;
+    font-size: nth($font-size,4);
 }
 .mision .misionDiv p{
-    font-size: 15px;
+    font-size: nth($font-size,8);
     padding-left: 10px;
 }
 .mision .misionImg img{
@@ -628,10 +628,10 @@
     height: 290px;
 }
 .vision .visionDiv h2{
-    font-size: 30px;
+    font-size: nth($font-size,4);
 }
 .vision .visionDiv p{
-    font-size: 15px;
+    font-size: nth($font-size,8);
     padding-left: 10px;
 }
 .vision .visionImg img{
@@ -640,10 +640,10 @@
     margin-bottom: 10px;
 }
 .historia .nuestraHistoria h2{
-    font-size: 30px;
+    font-size: nth($font-size,4);
 }
 .historia .nuestraHistoria p{
-    font-size: 15px;
+    font-size: nth($font-size,8);
     padding-left: 10px;
 }
 .historia .nuestraHistoriaImg img{
@@ -653,36 +653,36 @@
 }
 @media screen and (max-width:768px){
     .heroQuienesSomos .encabezadoQuienesSomos h1{
-        font-size: 30px;
+        font-size: nth($font-size,4);
     }
     .heroQuienesSomos .encabezadoQuienesSomos p{
-        font-size: 15px;
+        font-size: nth($font-size,8);
     }
     .mision .misionDiv{
         width: 100%;
     }
     .mision .misionDiv h2{
-        font-size: 25px;
+        font-size: nth($font-size,5)x;
     }
     .vision .visionDiv{
         width: 100%;
     }
     .vision .visionDiv h2{
-        font-size: 25px;
+        font-size: nth($font-size,5);
     }
     .historia .nuestraHistoria{
         width: 100%;
     }
     .historia .nuestraHistoria h2{
-        font-size: 25px;
+        font-size: nth($font-size,5);
     }
 }
 @media screen and (max-width:480px){
     .heroQuienesSomos .encabezadoQuienesSomos h1{
-        font-size: 25px;
+        font-size: nth($font-size,5);
     }
     .heroQuienesSomos .encabezadoQuienesSomos p{
-        font-size: 15px;
+        font-size: nth($font-size,8);
     }
     .mision{
         flex-direction: column;
@@ -692,11 +692,11 @@
         margin-right: 0;
     }
     .mision .misionDiv h2{
-        font-size: 20px;
+        font-size: nth($font-size,6);
         text-align: center;
     }
     .mision .misionDiv p{
-        font-size: 12px;
+        font-size: nth($font-size,10);
     }
     .mision .misionImg img{
         width: 200px;
@@ -711,11 +711,11 @@
         margin-left: 0;
     }
     .vision .visionDiv h2{
-        font-size: 20px;
+        font-size: nth($font-size,6);
         text-align: center;
     }
     .vision .visionDiv p{
-        font-size: 12px;
+        font-size: nth($font-size,10);
     }
     .vision .visionImg img{
         width: 230px;
@@ -730,11 +730,11 @@
         margin-right: 0;
     }
     .historia .nuestraHistoria h2{
-        font-size: 20px;
+        font-size: nth($font-size,6);
         text-align: center;
     }
     .historia .nuestraHistoria p{
-        font-size: 12px;
+        font-size: nth($font-size,10);
     }
     .historia .nuestraHistoriaImg img{
         width: 300px;
@@ -745,12 +745,12 @@
 /* CONTACTOS ---- MEDIA QUERIE--- RESPONSIVE */
 @media screen and (max-width:1024px){
     .heroContacto .heroTitulo h1{
-        font-size: 35px;
+        font-size: nth($font-size,3);
     }
 }
 @media screen and (max-width:768px){
     .heroContacto .heroTitulo h1{
-        font-size: 30px;
+        font-size: nth($font-size,4);
     }
     form .formularioContacto{
         width: 400px;
@@ -759,7 +759,7 @@
 }
 @media screen and (max-width:480px){
     .heroContacto .heroTitulo h1{
-        font-size: 25px;
+        font-size: nth($font-size,5);
     }
     .contacto{
         width: 100%;
@@ -778,6 +778,6 @@
         margin-bottom: 10px;
     }
     .contacto form .formularioContacto h3{
-        font-size: 15px;
+        font-size: nth($font-size,8);
     }
 }

@@ -57,9 +57,9 @@
   background: linear-gradient(66deg, #893aaa 45%, #5b0777 56%);
   background-attachment: fixed;
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  flex-direction: row; }
   .hero div {
     font-family: gotham-black, sans-serif;
     padding: 10px;
@@ -69,7 +69,7 @@
       font-size: 45px;
       margin-left: 100px; }
     .hero div h2 {
-      color: #cfcfcf;
+      color: #c9c5cc;
       font-size: 25px;
       margin-left: 100px; }
   .hero .imgHero {
@@ -138,7 +138,7 @@
     transition: 1s;
     overflow: hidden; }
     .especialidades .asociateContenedor .botonA:hover {
-      color: #790fa7; }
+      color: #5b0777; }
     .especialidades .asociateContenedor .botonA span {
       position: absolute;
       background-color: #893aaa;
@@ -195,7 +195,7 @@
       text-align: center;
       padding: 20px; }
     .beneficios .beneficiosItems ul li {
-      font-size: medium;
+      font-size: 15px;
       font-family: gotham-bold, sans-serif;
       font-weight: 200;
       padding: 10px; }
@@ -207,8 +207,9 @@
   width: 95%;
   height: 300px;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
   margin: 30px; }
   .conocenos .conocenosHistoria {
     width: 100%; }
@@ -240,9 +241,9 @@
   background: #893aaa;
   background: linear-gradient(66deg, #893aaa 45%, #5b0777 56%);
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   padding-left: 20px; }
   .heroAsociate div h1 {
     font-family: gotham-black, sans-serif;
@@ -250,12 +251,12 @@
     font-size: 45px; }
   .heroAsociate div h2 {
     font-family: gotham-bold, sans-serif;
-    color: #cfcfcf;
+    color: #c9c5cc;
     font-size: 25px; }
   .heroAsociate div p {
     font-family: gotham-bold, sans-serif;
-    color: #cfcfcf;
-    font-size: 17px; }
+    color: #c9c5cc;
+    font-size: 18px; }
   .heroAsociate .asociateImg img {
     width: 330px;
     height: 350px; }
@@ -291,10 +292,10 @@
     font-size: 15px;
     outline: none; }
     .formulario form .item:focus {
-      border: 2px solid #790fa7; }
+      border: 2px solid #5b0777; }
   .formulario div form h4 {
     font-family: gotham-black, sans-serif;
-    font-size: 17px; }
+    font-size: 18px; }
   .formulario div form .boton {
     font-family: gotham-regular, sans-serif;
     font-weight: 300;
@@ -304,7 +305,7 @@
     padding: 10px 15px;
     border: none;
     outline: none;
-    background-color: white;
+    background-color: #ffffff;
     color: black;
     font-size: 15px;
     cursor: pointer;
@@ -314,7 +315,7 @@
     flex-direction: column;
     align-items: center; }
     .formulario div form .boton:hover {
-      color: #790fa7; }
+      color: #5b0777; }
     .formulario div form .boton span {
       position: absolute;
       background-color: #893aaa;
@@ -350,9 +351,9 @@
 
 .heroServicios {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   background: #893aaa;
   background: linear-gradient(66deg, #893aaa 45%, #5b0777 56%); }
   .heroServicios .encabezadoServicios h1 {
@@ -363,7 +364,7 @@
     padding-bottom: 10px; }
   .heroServicios .encabezadoServicios h2 {
     font-family: gotham-black, sans-serif;
-    color: #cfcfcf;
+    color: #c9c5cc;
     font-size: 25px;
     padding-left: 120px; }
   .heroServicios .imagenServicios img {
@@ -427,12 +428,12 @@
       visibility: hidden;
       text-align: center; }
       .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria .gridItemAsociate .capa h4 {
-        color: white;
+        color: #ffffff;
         font-family: gotham-black, sans-serif;
         transition: all 500ms ease-out;
         margin-top: 20px; }
       .especialidadesServicios .especialidadesMedicos .gridContainerAsociateGaleria .gridItemAsociate .capa p {
-        color: white;
+        color: #ffffff;
         font-size: 15px;
         font-family: gotham-bold, sans-serif;
         text-align: center;
@@ -489,6 +490,7 @@
   height: 200px;
   width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center; }
   .heroQuienesSomos .encabezadoQuienesSomos h1 {
     font-family: gotham-black, sans-serif;
@@ -507,9 +509,9 @@
   width: 100%;
   height: 300px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: row; }
   .mision .misionDiv {
     width: 700px;
     margin-right: 50px; }
@@ -519,7 +521,7 @@
       color: #893aaa; }
     .mision .misionDiv p {
       font-family: gotham-bold, sans-serif;
-      font-size: 16px; }
+      font-size: 15px; }
   .mision .misionImg img {
     width: 250px;
     height: 300px; }
@@ -528,9 +530,9 @@
   width: 100%;
   height: 400px;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-direction: row-reverse; }
   .vision .visionDiv {
     width: 700px;
     margin-left: 50px; }
@@ -540,7 +542,7 @@
       color: #893aaa; }
     .vision .visionDiv p {
       font-family: gotham-bold, sans-serif;
-      font-size: 16px; }
+      font-size: 15px; }
   .vision .visionImg img {
     width: 350px;
     height: 400px;
@@ -550,9 +552,9 @@
   width: 100%;
   height: 400px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   margin-bottom: 20px; }
   .historia .nuestraHistoria {
     width: 700px;
@@ -569,9 +571,9 @@
 
 .heroContacto {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   background: #893aaa;
   background: linear-gradient(66deg, #893aaa 45%, #5b0777 56%);
   width: 100%;
@@ -579,14 +581,14 @@
   .heroContacto .heroTitulo h1 {
     font-family: gotham-black, sans-serif;
     font-size: 40px;
-    color: white;
+    color: #ffffff;
     text-align: center; }
 
 .contacto {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   margin: 10px; }
   .contacto .mapaContacto {
     width: 500px;
@@ -598,7 +600,7 @@
         font-size: 20px; }
   .contacto .numeros h3 {
     font-family: gotham-black, sans-serif;
-    font-size: 17px; }
+    font-size: 18px; }
   .contacto .numeros ul li {
     width: 90px;
     list-style: none;
@@ -608,7 +610,7 @@
     border-radius: 4px; }
   .contacto .direccion h3 {
     font-family: gotham-black, sans-serif;
-    font-size: 17px; }
+    font-size: 18px; }
   .contacto .direccion p {
     font-family: gotham-bold, sans-serif;
     font-size: 15px; }
@@ -624,7 +626,7 @@
     -moz-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75); }
     .contacto form .formularioContacto h3 {
       font-family: gotham-black, sans-serif;
-      font-size: 17px;
+      font-size: 18px;
       margin-top: 8px;
       color: #893aaa; }
     .contacto form .formularioContacto .control {
@@ -635,7 +637,7 @@
       margin-bottom: 15px;
       border: 1px solid #893aaa; }
       .contacto form .formularioContacto .control:focus {
-        border: 5px solid #790fa7; }
+        border: 5px solid #5b0777; }
     .contacto form .formularioContacto .botonC {
       font-family: gotham-regular, sans-serif;
       font-weight: 300;
@@ -645,7 +647,7 @@
       padding: 10px 15px;
       border: none;
       outline: none;
-      background-color: white;
+      background-color: #ffffff;
       color: black;
       font-size: 15px;
       cursor: pointer;
@@ -655,7 +657,7 @@
       flex-direction: column;
       align-items: center; }
       .contacto form .formularioContacto .botonC:hover {
-        color: #790fa7; }
+        color: #5b0777; }
       .contacto form .formularioContacto .botonC span {
         position: absolute;
         background-color: #893aaa;
@@ -692,36 +694,36 @@
 .footerCaja {
   height: 100px;
   font-family: gotham-bold, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   background-color: #c9c5cc;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-direction: row; }
   .footerCaja .footerH {
     order: 2;
     text-align: center; }
     .footerCaja .footerH h2 {
-      font-size: 16px; }
+      font-size: 15px; }
   .footerCaja .footerA {
     order: 1; }
     .footerCaja .footerA a {
       text-decoration: none;
       color: black; }
       .footerCaja .footerA a img {
-        width: 70px;
-        height: 70px; }
+        width: 50px;
+        height: 50px; }
   .footerCaja .footerRedes {
     order: 3;
     text-align: center; }
     .footerCaja .footerRedes h3 {
-      font-size: 16px; }
+      font-size: 15px; }
     .footerCaja .footerRedes a img {
-      width: 50px;
-      height: 50px; }
+      width: 40px;
+      height: 40px; }
     .footerCaja .footerRedes a img {
-      width: 50px;
-      height: 50px; }
+      width: 40px;
+      height: 40px; }
 
 /*-- INDEX---- MEDIA QUERIE-----RESPONSIVE-- */
 @media screen and (max-width: 1024px) {
@@ -758,7 +760,7 @@
     width: 75%;
     padding: 5px; }
   .especialidades.gridContainerGaleria .gridItem h3 {
-    font-size: 10px; }
+    font-size: 5px; }
   .especialidades .asociateContenedor {
     height: 300px; }
   .especialidades .asociateContenedor h2 {
@@ -1018,7 +1020,7 @@
     font-size: 20px;
     text-align: center; }
   .heroAsociate div p {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center; }
   .heroAsociate .asociateImg img {
     display: none; }
@@ -1033,7 +1035,7 @@
     font-size: 15px; }
   .formulario form .item {
     height: 35px;
-    font-size: 14px; }
+    font-size: 13px; }
   .formulario div form .boton {
     font-size: 13px; } }
 
@@ -1134,7 +1136,7 @@
   .ventajasTurnos .turnos h2 {
     font-size: 15px; }
   .ventajasTurnos .turnos h3 {
-    font-size: 14px; }
+    font-size: 13px; }
   .ventajasTurnos .turnos p {
     font-size: 12px; } }
 
@@ -1178,7 +1180,7 @@
   .mision .misionDiv {
     width: 100%; }
   .mision .misionDiv h2 {
-    font-size: 25px; }
+    font-size: 25px x; }
   .vision .visionDiv {
     width: 100%; }
   .vision .visionDiv h2 {

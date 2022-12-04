@@ -1,27 +1,25 @@
 .footerCaja{
     height: 100px;
     font-family: gotham-bold, sans-serif;
-    font-size: 16px;
-    background-color: #c9c5cc;
-    display: flex;
+    font-size: nth($font-size,8);
+    background-color: $color-terciario;
+    @include flex (flex, space-around, center);
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     .footerH{
         order: 2;
         text-align: center;
         h2{
-            font-size: 16px;
+            font-size: nth($font-size,8);
         }
     }
     .footerA{
         order: 1;
         a{
             text-decoration: none;
-            color: black;
+            color: $color-negro;
             img{
-                width: 70px;
-                height: 70px;
+                width: 50px;
+                height: 50px;
             }
         }
     }
@@ -29,18 +27,18 @@
         order: 3;
         text-align: center;
         h3{
-            font-size: 16px;
+            font-size: nth($font-size,8);
         }
         a{
             img{
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: 40px;
             };
         }
         a{
             img{
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: 40px;
             }
         }
     }

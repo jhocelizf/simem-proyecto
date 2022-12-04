@@ -1,0 +1,29 @@
+// VARIABLES
+//PALETA DE COLORES
+$color-principal:#893aaa; 
+$color-secundario: #5b0777;
+$color-terciario: #c9c5cc;
+$color-blanco: #ffffff;
+$color-negro: black;
+
+// // LISTA
+$font-size:
+45px, 
+40px, 
+35px, 
+30px, 
+25px, 
+20px, 
+18px, 
+15px, 
+13px, 
+12px, 
+10px,
+5px;  
+
+// MIXIN
+@mixin flex ($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

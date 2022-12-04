@@ -5,10 +5,8 @@
     background: rgb(137, 58, 170);
     background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
     background-attachment: fixed;
-    display: flex;
+    @include flex (flex, space-evenly, center);
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 
     div {
         font-family: gotham-black, sans-serif;
@@ -16,14 +14,14 @@
         margin: 20px;
 
         h1 {
-            color: #ffffff;
-            font-size: 45px;
+            color: $color-blanco;
+            font-size: nth($font-size,1);
             margin-left: 100px;
         }
 
         h2 {
-            color: rgb(207, 207, 207);
-            font-size: 25px;
+            color: $color-terciario;
+            font-size: nth($font-size,5);
             margin-left: 100px;
         }
     }
@@ -61,14 +59,14 @@
         .gridItem {
             font-family: gotham-regular, sans-serif;
             font-weight: 300;
-            border: 2px solid black;
+            border: 2px solid $color-negro;
             position: relative;
             text-align: center;
 
             h3 {
                 position: absolute;
                 bottom: 0;
-                font-size: 13px;
+                font-size: nth($font-size,9);
                 width: 100%;
                 background-color: #e7d8f0;
             }
@@ -84,19 +82,19 @@
     .asociateContenedor {
         h2 {
             width: 100%;
-            color: black;
-            font-size: 35px;
+            color: $color-negro;
+            font-size: nth($font-size,3);
             font-family: gotham-black, sans-serif;
             text-align: left;
             margin-bottom: 35px;
 
             span {
-                color: #893aaa;
+                color: $color-principal;
             }
         }
 
         p {
-            font-size: 20px;
+            font-size: nth($font-size,6);
             font-family: gotham-bold, sans-serif;
             margin-bottom: 40px;
         }
@@ -109,20 +107,20 @@
             padding: 5px 10px;
             border: none;
             outline: none;
-            background-color: #c9c5cc;
-            color: black;
-            font-size: 15px;
+            background-color: $color-terciario;
+            color: $color-negro;
+            font-size: nth($font-size,8);
             cursor: pointer;
             transition: 1s;
             overflow: hidden;
 
             &:hover {
-                color: #790fa7;
+                color: $color-secundario;
             }
 
             span {
                 position: absolute;
-                background-color: #893aaa;
+                background-color: $color-principal;
                 transition: 1s;
             }
 
@@ -171,7 +169,7 @@
             }
 
             a {
-                color: black;
+                color: $color-negro;
                 font-family: gotham-regular, sans-serif;
                 font-weight: 300;
                 text-decoration: none;
@@ -196,14 +194,14 @@
         h2 {
             font-size: 35px;
             font-family: gotham-black, sans-serif;
-            color: #893aaa;
+            color: $color-principal;
             text-align: center;
             padding: 20px;
         }
 
         ul {
             li {
-                font-size: medium;
+                font-size: nth($font-size,8);
                 font-family: gotham-bold, sans-serif;
                 font-weight: 200;
                 padding: 10px;
@@ -222,34 +220,33 @@
 .conocenos {
     width: 95%;
     height: 300px;
-    display: flex;
+    @include flex (flex, space-around, center);
     flex-direction: row-reverse;
-    justify-content: space-around;
     margin: 30px;
 
     .conocenosHistoria {
         width: 100%;
 
         h2 {
-            font-size: 35px;
+            font-size: nth($font-size,3);
             font-family: gotham-black, sans-serif;
-            color: #893aaa;
+            color: $color-principal;
             text-align: center;
             padding: 10px;
         }
 
         p {
             font-family: gotham-bold, sans-serif;
-            font-size: 15px;
+            font-size: nth($font-size,8);
             margin-bottom: 15px;
             text-align: center;
         }
 
         h3 {
             font-family: gotham-black, sans-serif;
-            font-size: 20px;
+            font-size: nth($font-size,6);
             text-align: center;
-            color: #893aaa;
+            color: $color-principal;
             padding: 15px;
         }
     }
@@ -269,29 +266,27 @@
     height: 400px;
     background: rgb(137, 58, 170);
     background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
-    display: flex;
+    @include flex (flex, space-around, center);
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     padding-left: 20px;
 
     div {
         h1 {
             font-family: gotham-black, sans-serif;
             color: #ffffff;
-            font-size: 45px;
+            font-size: nth($font-size,1);
         }
 
         h2 {
             font-family: gotham-bold, sans-serif;
-            color: rgb(207, 207, 207);
-            font-size: 25px;
+            color: $color-terciario;
+            font-size: nth($font-size,5);
         }
 
         p {
             font-family: gotham-bold, sans-serif;
-            color: rgb(207, 207, 207);
-            font-size: 17px;
+            color: $color-terciario;
+            font-size: nth($font-size, 7);
         }
     }
 
@@ -306,7 +301,7 @@
 .formulario {
     width: 900px;
     padding: 10px;
-    background-color: #c9c5cc;
+    background-color: $color-terciario;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -318,30 +313,30 @@
 
     h3 {
         font-family: gotham-black, sans-serif;
-        font-size: 20px;
-        color: #893aaa;
+        font-size: nth($font-size, 6);
+        color: $color-principal;
         text-align: center;
         margin-bottom: 20px;
     }
 
     form {
         label {
-            font-size: 15px;
+            font-size: nth($font-size,8);
         }
 
         .item {
             width: 100%;
-            background-color: #c9c5cc;
+            background-color: $color-terciario;
             padding: 10px;
             border-radius: 4px;
             margin-bottom: 15px;
-            border: 1px solid #893aaa;
+            border: 1px solid $color-principal;
             font-family: gotham-bold, sans-serif;
-            font-size: 15px;
+            font-size: nth($font-size,8);
             outline: none;
 
             &:focus {
-                border: 2px solid #790fa7;
+                border: 2px solid $color-secundario;
             }
         }
     }
@@ -350,7 +345,7 @@
         form {
             h4 {
                 font-family: gotham-black, sans-serif;
-                font-size: 17px;
+                font-size: nth($font-size,7);
             }
 
             .boton {
@@ -362,9 +357,9 @@
                 padding: 10px 15px;
                 border: none;
                 outline: none;
-                background-color: white;
-                color: black;
-                font-size: 15px;
+                background-color: $color-blanco;
+                color: $color-negro;
+                font-size: nth($font-size,8);
                 cursor: pointer;
                 transition: 1s;
                 overflow: hidden;
@@ -373,12 +368,12 @@
                 align-items: center;
 
                 &:hover {
-                    color: #790fa7;
+                    color: $color-secundario;
                 }
 
                 span {
                     position: absolute;
-                    background-color: #893aaa;
+                    background-color: $color-principal;
                     transition: 1s;
                 }
 
@@ -432,26 +427,24 @@
 
 // MAIN SERVICIOS
 .heroServicios {
-    display: flex;
+    @include flex (flex, space-between, center);
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     background: rgb(137, 58, 170);
     background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
 
     .encabezadoServicios {
         h1 {
             font-family: gotham-black, sans-serif;
-            color: #ffffff;
-            font-size: 45px;
+            color: $color-blanco;
+            font-size: nth($font-size,1);
             padding-left: 100px;
             padding-bottom: 10px;
         }
 
         h2 {
             font-family: gotham-black, sans-serif;
-            color: rgb(207, 207, 207);
-            font-size: 25px;
+            color: $color-terciario;
+            font-size: nth($font-size,5);
             padding-left: 120px;
         }
     }
@@ -468,9 +461,9 @@
     .especialidadesMedicos {
         h2 {
             font-family: gotham-black, sans-serif;
-            font-size: 40px;
-            color: #893aaa;
-            background-color: #c9c5cc;
+            font-size: nth($font-size,2);
+            color: $color-principal;
+            background-color: $color-terciario;
             text-align: center;
             margin-top: 10px;
         }
@@ -488,7 +481,7 @@
             .gridItemAsociate {
                 font-family: gotham-regular, sans-serif;
                 font-weight: 300;
-                border: 2px solid black;
+                border: 2px solid $color-negro;
                 position: relative;
                 text-align: center;
                 overflow: hidden;
@@ -512,7 +505,7 @@
                 h3 {
                     position: absolute;
                     bottom: 0;
-                    font-size: 13px;
+                    font-size: nth($font-size,9);
                     width: 100%;
                     height: 17px;
                     background: rgba(212, 180, 226, 0.61);
@@ -537,15 +530,15 @@
                     text-align: center;
 
                     h4 {
-                        color: white;
+                        color: $color-blanco;
                         font-family: gotham-black, sans-serif;
                         transition: all 500ms ease-out;
                         margin-top: 20px;
                     }
 
                     p {
-                        color: white;
-                        font-size: 15px;
+                        color: $color-blanco;
+                        font-size: nth($font-size,8);
                         font-family: gotham-bold, sans-serif;
                         text-align: center;
                         line-height: 1.5;
@@ -567,19 +560,19 @@
         width: 100%;
         margin: 15px;
         padding: 8px;
-        border: 1px solid black;
+        border: 1px solid $color-negro;
 
         h2 {
             font-family: gotham-black, sans-serif;
-            font-size: 30px;
-            color: #893aaa;
+            font-size: nth($font-size,4);
+            color: $color-principal;
             text-align: center;
             padding-bottom: 5px;
         }
 
         p {
             font-family: gotham-bold, sans-serif;
-            font-size: 13px;
+            font-size: nth($font-size,9);
             text-align: center;
         }
     }
@@ -588,19 +581,19 @@
         width: 100%;
         margin: 15px;
         padding: 8px;
-        border: 1px solid black;
+        border: 1px solid $color-negro;
 
         h2 {
             font-family: gotham-black, sans-serif;
-            font-size: 30px;
-            color: #893aaa;
+            font-size: nth($font-size,4);
+            color: $color-principal;
             text-align: center;
             padding-bottom: 5px;
         }
 
         h3 {
             font-family: gotham-black, sans-serif;
-            font-size: 20px;
+            font-size: nth($font-size,6);
             text-align: center;
             padding-bottom: 5px;
         }
@@ -611,7 +604,7 @@
 
             a {
                 font-family: gotham-black, sans-serif;
-                color: #893aaa;
+                color: $color-principal;
                 text-decoration: none;
             }
         }
@@ -624,21 +617,20 @@
     background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
     height: 200px;
     width: 100%;
-    display: flex;
-    align-items: center;
+    @include flex (flex, center, center);
 
     .encabezadoQuienesSomos {
         h1 {
             font-family: gotham-black, sans-serif;
-            font-size: 40px;
-            color: #ffffff;
+            font-size: nth($font-size,2);
+            color: $color-blanco;
             text-align: center;
         }
 
         p {
             font-family: gotham-bold, sans-serif;
-            font-size: 15px;
-            color: #ffffff;
+            font-size: nth($font-size,8);
+            color: $color-blanco;
             text-align: center;
             padding: 5px;
             margin: 10px;
@@ -649,10 +641,8 @@
 .mision {
     width: 100%;
     height: 300px;
-    display: flex;
+    @include flex (flex, center, center);
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
 
     .misionDiv {
         width: 700px;
@@ -660,13 +650,13 @@
 
         h2 {
             font-family: gotham-black, sans-serif;
-            font-size: 35px;
-            color: #893aaa;
+            font-size: nth($font-size,3);
+            color: $color-principal;
         }
 
         p {
             font-family: gotham-bold, sans-serif;
-            font-size: 16px;
+            font-size: nth($font-size,8);
         }
     }
 
@@ -681,10 +671,8 @@
 .vision {
     width: 100%;
     height: 400px;
-    display: flex;
+    @include flex (flex, space-around, center);
     flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
 
     .visionDiv {
         width: 700px;
@@ -692,13 +680,13 @@
 
         h2 {
             font-family: gotham-black, sans-serif;
-            font-size: 35px;
-            color: #893aaa;
+            font-size: nth($font-size,3);
+            color: $color-principal;
         }
 
         p {
             font-family: gotham-bold, sans-serif;
-            font-size: 16px;
+            font-size: nth($font-size,8);
         }
     }
 
@@ -714,10 +702,8 @@
 .historia {
     width: 100%;
     height: 400px;
-    display: flex;
+    @include flex (flex, center, center);
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 20px;
 
     .nuestraHistoria {
@@ -726,8 +712,8 @@
 
         h2 {
             font-family: gotham-black, sans-serif;
-            font-size: 35px;
-            color: #893aaa;
+            font-size: nth($font-size,3);
+            color: $color-principal;
         }
 
         p {
@@ -745,10 +731,8 @@
 
 // MAIN CONTACTOS
 .heroContacto {
-    display: flex;
+    @include flex (flex, space-around, center);
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     background: rgb(137, 58, 170);
     background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
     width: 100%;
@@ -757,8 +741,8 @@
     .heroTitulo {
         h1 {
             font-family: gotham-black, sans-serif;
-            font-size: 40px;
-            color: white;
+            font-size: nth($font-size,2);
+            color: $color-blanco;
             text-align: center;
         }
     }
@@ -766,34 +750,32 @@
 }
 
 .contacto {
-    display: flex;
+    @include flex (flex, space-around, center);
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     margin: 10px;
     .mapaContacto{
         width: 500px;
         padding-right: 10px;
         p {
             font-family: gotham-bold, sans-serif;
-            font-size: 15px;
+            font-size: nth($font-size,8);
             &::first-letter {
-                font-size: 20px;
+                font-size: nth($font-size,6);
             }
         }
     }
     .numeros {
         h3 {
             font-family: gotham-black, sans-serif;
-            font-size: 17px;
+            font-size: nth($font-size,7);
         }
         ul {
             li {
                 width: 90px;
                 list-style: none;
                 text-align: center;
-                background-color: #c9c5cc;
-                color: black;
+                background-color: $color-terciario;
+                color: $color-negro;
                 border-radius: 4px;
             }
         }
@@ -801,11 +783,11 @@
     .direccion {
         h3 {
             font-family: gotham-black, sans-serif;
-            font-size: 17px;
+            font-size: nth($font-size,7);
         }
         p {
             font-family: gotham-bold, sans-serif;
-            font-size: 15px;
+            font-size: nth($font-size,8);
         }
     }
     form{
@@ -814,26 +796,26 @@
             padding: 30px;
             background-color: #c9c5cc;
             font-family: gotham-bold, sans-serif;
-            font-size: 15px;
-            color: black;
+            font-size: nth($font-size,8);
+            color: $color-negro;
             box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
             -webkit-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
             -moz-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
             h3{
                 font-family: gotham-black, sans-serif;
-            font-size: 17px;
-            margin-top: 8px;
-            color: #893aaa;
+                font-size: nth($font-size,7);
+                margin-top: 8px;
+                color: $color-principal;
             }
             .control {
                 width: 100%;
-                background-color: #c9c5cc;
+                background-color: $color-terciario;
                 padding: 10px;
                 border-radius: 4px;
                 margin-bottom: 15px;
-                border: 1px solid #893aaa;
+                border: 1px solid $color-principal;
                 &:focus {
-                    border: 5px solid #790fa7;
+                    border: 5px solid $color-secundario;
                 }
             }
             .botonC {
@@ -845,9 +827,9 @@
                 padding: 10px 15px;
                 border: none;
                 outline: none;
-                background-color: white;
-                color: black;
-                font-size: 15px;
+                background-color: $color-blanco;
+                color: $color-negro;
+                font-size: nth($font-size,8);
                 cursor: pointer;
                 transition: 1s;
                 overflow: hidden;
@@ -855,11 +837,11 @@
                 flex-direction: column;
                 align-items: center;
                 &:hover {
-                    color: #790fa7;
+                    color: $color-secundario;
                 }
                 span {
                     position: absolute;
-                    background-color: #893aaa;
+                    background-color: $color-principal;
                     transition: 1s;
                 }
                 span:nth-child(1) {

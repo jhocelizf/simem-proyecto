@@ -1,11 +1,11 @@
 .encabezado{
     width: 100%;
-    background-color: #c9c5cc;
+    background-color: $color-terciario;
     height: 100%;
     .navbar{
         padding: 0;
         .container-fluid{
-            background-color: #c9c5cc;
+            background-color: $color-terciario;
             .navbar-brand{
                 img{
                     width: 280px;
@@ -18,7 +18,7 @@
                 font-weight: 300;
                 transition: 1s ease;
                 &:hover {
-                    color: #893aaa;
+                    color: $color-principal;
                     }
                 }
         }
