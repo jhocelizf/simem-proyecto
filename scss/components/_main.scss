@@ -1,44 +1,57 @@
 // MAIN INDEX
-.hero {
+.hero{
     width: 100%;
-    height: 470px;
-    background: rgb(137, 58, 170);
-    background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
-    background-attachment: fixed;
-    @include flex (flex, space-evenly, center);
-    flex-direction: row;
-
-    div {
+    .ola{
+        background: rgb(137, 58, 170);
+        background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
+        background-attachment: fixed;
         font-family: gotham-black, sans-serif;
-        padding: 10px;
-        margin: 20px;
-
-        h1 {
-            color: $color-blanco;
-            font-size: nth($font-size,1);
-            margin-left: 100px;
+        height: 500px;
+        @include flex (flex, center, center);
+        padding-left: 10px;
+        text-align: center;
+        position: relative;
+        div{
+            h1{
+                color: $color-blanco;
+                font-size: nth($font-size,1);
+                margin-left: 15px;
+            }
+            h2{
+                color: rgb(207, 207, 207);
+                font-size: nth($font-size,5);
+                margin-left: 15px;
+            }
         }
-
-        h2 {
-            color: $color-terciario;
-            font-size: nth($font-size,5);
-            margin-left: 100px;
+        .imgHero{
+            img{
+                width: 450px;
+                height: 400px;
+                transition: .5s ease-in;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    .custom-shape-divider-bottom-1669774399{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        svg{
+            position: relative;
+            display: block;
+            width: calc(115% + 1.3px);
+            height: 167px;
+            .shape-fill{
+                fill: $color-blanco;
+                padding-bottom: 20px;
+            }
         }
     }
-
-    .imgHero {
-        width: 450px;
-        height: 380px;
-        transition: .5s ease-in;
-
-        img {
-            width: 450px;
-            height: 380px;
-        }
-
-        &:hover {
-            transform: scale(1.1);
-        }
     }
 }
 
