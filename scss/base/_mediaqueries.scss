@@ -600,11 +600,19 @@
         width: 100%;
         margin-bottom: 15px;
     }
+    .ventajasTurnos .ventajas{
+        border: none;
+        width: 95%;
+    }
     .ventajasTurnos .ventajas h2{
         font-size: nth($font-size,8);
     }
     .ventajasTurnos .ventajas p{
         font-size: nth($font-size,10);
+        text-align: center;
+    }
+    .ventajasTurnos .turnos{
+        border: none;
     }
     .ventajasTurnos .turnos h2{
         font-size: nth($font-size,8);

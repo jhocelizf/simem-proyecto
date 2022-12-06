@@ -36,9 +36,11 @@
   background-color: #c9c5cc;
   height: 100%; }
   .encabezado .navbar {
+    font-family: gotham-regular, sans-serif;
     position: relative;
     z-index: 2;
-    padding: 0; }
+    padding: 0;
+    text-align: right; }
     .encabezado .navbar .container-fluid {
       background-color: #c9c5cc; }
       .encabezado .navbar .container-fluid .navbar-brand img {
@@ -46,7 +48,6 @@
         height: 90px; }
       .encabezado .navbar .container-fluid .collapse .nav-link.active {
         font-size: small;
-        font-family: gotham-regular, sans-serif;
         font-weight: 300;
         transition: 1s ease; }
         .encabezado .navbar .container-fluid .collapse .nav-link.active:hover {
@@ -1149,10 +1150,16 @@
     height: 350px;
     width: 100%;
     margin-bottom: 15px; }
+  .ventajasTurnos .ventajas {
+    border: none;
+    width: 95%; }
   .ventajasTurnos .ventajas h2 {
     font-size: 15px; }
   .ventajasTurnos .ventajas p {
-    font-size: 12px; }
+    font-size: 12px;
+    text-align: center; }
+  .ventajasTurnos .turnos {
+    border: none; }
   .ventajasTurnos .turnos h2 {
     font-size: 15px; }
   .ventajasTurnos .turnos h3 {

@@ -3,9 +3,11 @@
     background-color: $color-terciario;
     height: 100%;
     .navbar{
+        font-family: gotham-regular, sans-serif;
         position: relative;
         z-index: 2;
         padding: 0;
+        text-align: right;
         .container-fluid{
             background-color: $color-terciario;
             .navbar-brand{
@@ -16,13 +18,12 @@
             }
             .collapse .nav-link.active{
                 font-size: small;
-                font-family: gotham-regular, sans-serif;
                 font-weight: 300;
                 transition: 1s ease;
                 &:hover {
                     color: $color-principal;
                     }
-                }
+            }
         }
     }
 }

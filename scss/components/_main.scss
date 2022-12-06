@@ -287,7 +287,7 @@
     div {
         h1 {
             font-family: gotham-black, sans-serif;
-            color: #ffffff;
+            color: $color-blanco;
             font-size: nth($font-size,1);
         }
 
@@ -320,7 +320,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
     font-family: gotham-bold, sans-serif;
-    color: black;
+    color: $color-negro;
     box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
     -webkit-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
     -moz-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
