@@ -36,6 +36,8 @@
   background-color: #c9c5cc;
   height: 100%; }
   .encabezado .navbar {
+    position: relative;
+    z-index: 2;
     padding: 0; }
     .encabezado .navbar .container-fluid {
       background-color: #c9c5cc; }
@@ -63,7 +65,8 @@
     align-items: center;
     padding-left: 10px;
     text-align: center;
-    position: relative; }
+    position: relative;
+    z-index: 1; }
     .hero .ola div h1 {
       color: #ffffff;
       font-size: 45px;

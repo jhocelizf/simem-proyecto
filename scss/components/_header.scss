@@ -3,6 +3,8 @@
     background-color: $color-terciario;
     height: 100%;
     .navbar{
+        position: relative;
+        z-index: 2;
         padding: 0;
         .container-fluid{
             background-color: $color-terciario;
