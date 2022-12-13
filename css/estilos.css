@@ -603,7 +603,8 @@
     font-family: gotham-black, sans-serif;
     font-size: 40px;
     color: #ffffff;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 0; }
 
 .contacto {
   display: flex;
@@ -616,7 +617,8 @@
     padding-right: 10px; }
     .contacto .mapaContacto p {
       font-family: gotham-bold, sans-serif;
-      font-size: 15px; }
+      font-size: 15px;
+      padding: 5px; }
       .contacto .mapaContacto p::first-letter {
         font-size: 20px; }
   .contacto .numeros h3 {
