@@ -637,6 +637,10 @@
   .contacto .direccion p {
     font-family: gotham-bold, sans-serif;
     font-size: 15px; }
+  .contacto .maps {
+    width: 400px;
+    height: 250px;
+    border: 0; }
   .contacto form .formularioContacto {
     width: 500px;
     padding: 30px;
@@ -1290,6 +1294,8 @@
     width: 100%; }
   .contacto .mapaContacto p {
     text-align: center; }
+  .contacto .maps {
+    width: 300px; }
   .contacto form .formularioContacto {
     width: 90%;
     margin-top: 15px;

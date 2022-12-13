@@ -810,6 +810,11 @@
             font-size: nth($font-size,8);
         }
     }
+    .maps{
+        width: 400px;
+        height: 250px;
+        border: 0;
+    }
     form{
         .formularioContacto{
             width: 500px;
