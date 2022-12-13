@@ -602,7 +602,7 @@
     }
     .ventajasTurnos .ventajas{
         border: none;
-        width: 95%;
+        padding: 10px;
     }
     .ventajasTurnos .ventajas h2{
         font-size: nth($font-size,8);
@@ -637,7 +637,6 @@
 }
 .mision .misionDiv p{
     font-size: nth($font-size,8);
-    padding-left: 10px;
 }
 .mision .misionImg img{
     width: 230px;
@@ -648,7 +647,6 @@
 }
 .vision .visionDiv p{
     font-size: nth($font-size,8);
-    padding-left: 10px;
 }
 .vision .visionImg img{
     width: 330px;
@@ -660,7 +658,6 @@
 }
 .historia .nuestraHistoria p{
     font-size: nth($font-size,8);
-    padding-left: 10px;
 }
 .historia .nuestraHistoriaImg img{
     width: 430px;
@@ -720,7 +717,7 @@
     }
     .vision{
         flex-direction: column;
-        height: 410px;
+        height: 430px;
         margin-top: 10px;
     }
     .vision .visionDiv{

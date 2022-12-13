@@ -531,7 +531,8 @@
   flex-direction: row; }
   .mision .misionDiv {
     width: 700px;
-    margin-right: 50px; }
+    margin-right: 50px;
+    padding: 10px; }
     .mision .misionDiv h2 {
       font-family: gotham-black, sans-serif;
       font-size: 35px;
@@ -541,7 +542,8 @@
       font-size: 15px; }
   .mision .misionImg img {
     width: 250px;
-    height: 300px; }
+    height: 300px;
+    margin-bottom: 10px; }
 
 .vision {
   width: 100%;
@@ -552,7 +554,8 @@
   flex-direction: row-reverse; }
   .vision .visionDiv {
     width: 700px;
-    margin-left: 50px; }
+    margin-left: 50px;
+    padding: 10px; }
     .vision .visionDiv h2 {
       font-family: gotham-black, sans-serif;
       font-size: 35px;
@@ -575,7 +578,8 @@
   margin-bottom: 20px; }
   .historia .nuestraHistoria {
     width: 700px;
-    margin-right: 50px; }
+    margin-right: 50px;
+    padding: 10px; }
     .historia .nuestraHistoria h2 {
       font-family: gotham-black, sans-serif;
       font-size: 35px;
@@ -1152,7 +1156,7 @@
     margin-bottom: 15px; }
   .ventajasTurnos .ventajas {
     border: none;
-    width: 95%; }
+    padding: 10px; }
   .ventajasTurnos .ventajas h2 {
     font-size: 15px; }
   .ventajasTurnos .ventajas p {
@@ -1176,16 +1180,14 @@
   .mision .misionDiv h2 {
     font-size: 30px; }
   .mision .misionDiv p {
-    font-size: 15px;
-    padding-left: 10px; }
+    font-size: 15px; }
   .mision .misionImg img {
     width: 230px;
     height: 290px; }
   .vision .visionDiv h2 {
     font-size: 30px; }
   .vision .visionDiv p {
-    font-size: 15px;
-    padding-left: 10px; }
+    font-size: 15px; }
   .vision .visionImg img {
     width: 330px;
     height: 380px;
@@ -1193,8 +1195,7 @@
   .historia .nuestraHistoria h2 {
     font-size: 30px; }
   .historia .nuestraHistoria p {
-    font-size: 15px;
-    padding-left: 10px; }
+    font-size: 15px; }
   .historia .nuestraHistoriaImg img {
     width: 430px;
     height: 320px; } }
@@ -1237,7 +1238,7 @@
     height: 260px; }
   .vision {
     flex-direction: column;
-    height: 410px;
+    height: 430px;
     margin-top: 10px; }
   .vision .visionDiv {
     margin-left: 0; }
