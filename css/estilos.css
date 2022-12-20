@@ -59,7 +59,7 @@
     background: #893aaa;
     background: linear-gradient(66deg, #893aaa 45%, #5b0777 56%);
     background-attachment: fixed;
-    font-family: gotham-black, sans-serif;
+    font-family: gotham-bold, sans-serif;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -263,7 +263,7 @@
   flex-direction: row;
   padding-left: 20px; }
   .heroAsociate div h1 {
-    font-family: gotham-black, sans-serif;
+    font-family: gotham-bold, sans-serif;
     color: #ffffff;
     font-size: 45px; }
   .heroAsociate div h2 {
@@ -374,13 +374,13 @@
   background: #893aaa;
   background: linear-gradient(66deg, #893aaa 45%, #5b0777 56%); }
   .heroServicios .encabezadoServicios h1 {
-    font-family: gotham-black, sans-serif;
+    font-family: gotham-bold, sans-serif;
     color: #ffffff;
     font-size: 45px;
     padding-left: 100px;
     padding-bottom: 10px; }
   .heroServicios .encabezadoServicios h2 {
-    font-family: gotham-black, sans-serif;
+    font-family: gotham-bold, sans-serif;
     color: #c9c5cc;
     font-size: 25px;
     padding-left: 120px; }
@@ -510,7 +510,7 @@
   justify-content: center;
   align-items: center; }
   .heroQuienesSomos .encabezadoQuienesSomos h1 {
-    font-family: gotham-black, sans-serif;
+    font-family: gotham-bold, sans-serif;
     font-size: 40px;
     color: #ffffff;
     text-align: center; }
@@ -600,7 +600,7 @@
   width: 100%;
   height: 50px; }
   .heroContacto .heroTitulo h1 {
-    font-family: gotham-black, sans-serif;
+    font-family: gotham-bold, sans-serif;
     font-size: 40px;
     color: #ffffff;
     text-align: center;

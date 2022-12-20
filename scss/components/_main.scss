@@ -5,7 +5,7 @@
         background: rgb(137, 58, 170);
         background: linear-gradient(66deg, rgba(137, 58, 170, 1) 45%, rgba(91, 7, 119, 1) 56%);
         background-attachment: fixed;
-        font-family: gotham-black, sans-serif;
+        font-family: gotham-bold, sans-serif;
         height: 500px;
         @include flex (flex, center, center);
         padding-left: 10px;
@@ -286,7 +286,7 @@
 
     div {
         h1 {
-            font-family: gotham-black, sans-serif;
+            font-family: gotham-bold, sans-serif;
             color: $color-blanco;
             font-size: nth($font-size,1);
         }
@@ -448,7 +448,7 @@
 
     .encabezadoServicios {
         h1 {
-            font-family: gotham-black, sans-serif;
+            font-family: gotham-bold, sans-serif;
             color: $color-blanco;
             font-size: nth($font-size,1);
             padding-left: 100px;
@@ -456,7 +456,7 @@
         }
 
         h2 {
-            font-family: gotham-black, sans-serif;
+            font-family: gotham-bold, sans-serif;
             color: $color-terciario;
             font-size: nth($font-size,5);
             padding-left: 120px;
@@ -635,7 +635,7 @@
 
     .encabezadoQuienesSomos {
         h1 {
-            font-family: gotham-black, sans-serif;
+            font-family: gotham-bold, sans-serif;
             font-size: nth($font-size,2);
             color: $color-blanco;
             text-align: center;
@@ -758,7 +758,7 @@
 
     .heroTitulo {
         h1 {
-            font-family: gotham-black, sans-serif;
+            font-family: gotham-bold, sans-serif;
             font-size: nth($font-size,2);
             color: $color-blanco;
             text-align: center;
