@@ -1005,6 +1005,8 @@
     font-size: 15px; }
   .conocenos .conocenosHistoria p {
     font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     margin-bottom: 5px; }
   .conocenos .conocenosImg {
     width: 260px;
